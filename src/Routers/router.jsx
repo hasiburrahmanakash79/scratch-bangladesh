@@ -3,6 +3,7 @@ import Main from "../Layouts/Main";
 import Home from "../Pages/HomePage/Home";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Olympiad from "../Pages/Olympiad/Olympiad";
+import Blog from "../Pages/Blog/Blog";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/olympiad",
         element: <Olympiad/>
+      },
+      {
+        path: "/blog",
+        element: <Blog/>
       }
     ],
   },
