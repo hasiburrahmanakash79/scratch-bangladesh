@@ -1,8 +1,7 @@
 const AboutUs = () => {
   return (
-    <div className="container pt-28 mx-auto"> 
-    <h1 className="md:text-5xl text-3xl font-bold  text-center">About Us</h1>
-      <div className="items-center grid-cols-2 gap-10 md:grid my-7">
+    <div className="container mx-auto">
+      <div className="items-center grid-cols-2 gap-10 md:grid  h-screen -">
         <div className="">
           <img src="https://scratchbangladesh.com/wp-content/uploads/2024/01/Scratch-Bangladesh-logo-with-picture.png" />
         </div>
@@ -31,8 +30,15 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div>
-      <iframe width="100%" height="500" src="https://www.youtube.com/embed/Bs4bNZRo28Q?si=1ZCkGRCcyNp8hHCy" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+      <div className="h-screen flex justify-center items-center">
+        <iframe
+          width="70%"
+          height="700"
+          src="https://www.youtube.com/embed/Bs4bNZRo28Q?si=1ZCkGRCcyNp8hHCy"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   );

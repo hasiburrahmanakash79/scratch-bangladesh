@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Tutorial = () => {
   return (
-    <div className="items-center grid-cols-2 gap-10 md:grid container pt-14 mx-auto">
+    <div className="items-center grid-cols-2 gap-10 md:grid container pt-14 mx-auto h-screen">
       <div className="">
         <img
           src="https://en.scratch-wiki.info/w/images/thumb/Not_Logged_On.PNG/800px-Not_Logged_On.PNG"

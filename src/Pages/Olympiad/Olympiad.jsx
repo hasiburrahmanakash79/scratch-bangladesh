@@ -68,7 +68,7 @@ const Olympiad = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="py-10">
         <h1 className="text-3xl font-bold my-5">Olympiad champions:  </h1>
         <div className="items-center grid-cols-3 gap-10 md:grid my-7">
           <div className="col-span-2 bg-blue-400 p-5 rounded-lg ">
@@ -82,7 +82,8 @@ const Olympiad = () => {
         </div>
       </div>
       <div >
-      <h1 className="text-3xl font-bold my-5">Olympiad Photo Gallery: </h1>
+      <div className="my-10">
+      <h1 className="text-3xl font-bold mb-7">Olympiad Photo Gallery: </h1>
         <div className="grid grid-cols-4 gap-5 ">
         <PhotoGallery/>
         <PhotoGallery/>
@@ -93,6 +94,7 @@ const Olympiad = () => {
         <PhotoGallery/>
         <PhotoGallery/>
         </div>
+      </div>
       </div>
     </div>
   );

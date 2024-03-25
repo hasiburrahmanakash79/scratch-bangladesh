@@ -5,6 +5,7 @@ import AboutUs from "../Pages/AboutUs/AboutUs";
 import Olympiad from "../Pages/Olympiad/Olympiad";
 import Blog from "../Pages/Blog/Blog";
 import BlogDetails from "../Pages/Blog/BlogDetails";
+import Login from "../Pages/RegistrationPage/Login/Login";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,12 @@ const router = createBrowserRouter([
         element: <BlogDetails/>
       }
     ],
+    
   },
+  {
+    path: "/login",
+    element: <Login/>
+  }
 ]);
 
 export default router;

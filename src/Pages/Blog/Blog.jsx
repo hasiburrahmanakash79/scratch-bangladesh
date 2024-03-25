@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
-    <div className="container pt-28 mx-auto">
-      <h1 className="md:text-5xl text-3xl font-bold  text-center">Blog</h1>
+    <div className="container pt-28 mx-auto mb-20">
+      <h1 className="md:text-5xl text-3xl font-bold pb-7 text-center">Blog</h1>
       <p className="text-center">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui temporibus
         commodi aperiam animi ratione. Esse ducimus neque sequi necessitatibus

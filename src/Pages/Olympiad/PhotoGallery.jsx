@@ -2,7 +2,7 @@
 
 const PhotoGallery = () => {
     return (
-        <div>
+        <div className="">
             <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
       <div className="">
         <img
