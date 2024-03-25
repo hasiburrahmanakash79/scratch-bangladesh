@@ -1,9 +1,10 @@
 const AboutUs = () => {
   return (
-    <div className="container mx-auto p-3">
-      <div className="items-center grid-cols-2 gap-10 md:grid  h-screen -">
+    <div className="container mx-auto p-3 pt-14">
+      <div className="items-center grid-cols-2 gap-10 md:grid  md:h-screen -">
         <div className="">
-          <img src="https://scratchbangladesh.com/wp-content/uploads/2024/01/Scratch-Bangladesh-logo-with-picture.png" />
+          <img src="https://scratchbangladesh.com/wp-content/uploads/2024/01/Scratch-Bangladesh-logo-with-picture.png" 
+          className="w-full"/>
         </div>
         <div className="text-center md:text-left">
           <h1 className="my-3 md:text-5xl text-3xl font-bold">
@@ -33,7 +34,7 @@ const AboutUs = () => {
       <div className="h-screen flex justify-center items-center">
         <iframe
           width="70%"
-          height="700"
+          height="600"
           src="https://www.youtube.com/embed/Bs4bNZRo28Q?si=1ZCkGRCcyNp8hHCy"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

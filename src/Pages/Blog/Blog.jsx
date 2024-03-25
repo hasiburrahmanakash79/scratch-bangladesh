@@ -18,8 +18,8 @@ const Blog = () => {
         excepturi perspiciatis amet doloremque reiciendis molestiae.
       </p>
 
-      <div className=" md:grid grid-cols-3 my-5 gap-5">
-        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg">
+      <div className=" md:grid grid-cols-3 my-5 gap-5 ">
+        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg mt-5">
             <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
           <div className="avatar">
             <div className="w-fit rounded">
@@ -28,7 +28,7 @@ const Blog = () => {
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, odio sed? Quos exercitationem debitis, repellat perferendis...... <Link to="/details" className="link link-hover text-violet-600">Read more</Link></p>
         </div>
-        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg">
+        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg mt-5">
             <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
           <div className="avatar">
             <div className="w-fit rounded">
@@ -37,7 +37,7 @@ const Blog = () => {
           </div>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, odio sed? Quos exercitationem debitis, repellat perferendis...... <Link to="/details" className="link link-hover text-violet-600">Read more</Link></p>
         </div>
-        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg">
+        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg mt-5">
             <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
           <div className="avatar">
             <div className="w-fit rounded">

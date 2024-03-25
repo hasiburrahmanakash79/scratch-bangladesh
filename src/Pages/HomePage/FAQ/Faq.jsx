@@ -54,6 +54,7 @@ const Faq = () => {
           <img
             src="https://png.pngtree.com/png-clipart/20200422/ourmid/pngtree-hand-drawn-cartoon-faq-business-plant-illustration-png-image_2190797.jpg"
             alt=""
+            className="w-full mt-5"
           />
         </div>
       </div>

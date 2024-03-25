@@ -9,7 +9,7 @@ const Hero = () => {
             <h1 className="my-3 md:text-6xl text-4xl font-bold uppercase">
             স্ক্র্যাচ বাংলাদেশ
             </h1>
-            <p className="backdrop-blur-md w-1/2 mx-auto text-lg">
+            <p className=" md:w-1/2 mx-auto p-5 text-lg">
             আমরা দেশব্যাপী বাংলা ভাষায় প্রোগ্রামিংকে জনপ্রিয় করতে কাজ করে যাচ্ছি। বাংলা ভাষায় স্ক্র্যাচ এর উপর টিউটোরিয়াল, প্রজেক্ট আইডিয়া, কোর্স সহ বছরব্যাপী নানা আয়োজনের খবর স্ক্র্যাচ বাংলাদেশ ওয়েবসাইটে পাওয়া যাবে।
             </p>
             <div>

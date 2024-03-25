@@ -36,7 +36,7 @@ const Olympiad = () => {
       <div>
         <h1 className="text-3xl font-bold my-5">বিগত বছরের প্রশ্ন:</h1>
         <div className="items-center grid-cols-3 gap-10 md:grid my-7">
-          <div className="col-span-2">
+          <div className="col-span-2 mb-5">
             <img src="https://i.ytimg.com/vi/jWjNNdrype8/maxresdefault.jpg" />
           </div>
           <div className=" col-span-1 bg-blue-400 h-full p-5 rounded-lg space-y-4">

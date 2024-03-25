@@ -22,12 +22,12 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-opacity-70 px-3 backdrop-blur-md navbar bg-[#F4F1F1] fixed z-10 text-black">
+    <div className="bg-opacity-70 backdrop-blur-md navbar bg-[#F4F1F1] fixed z-10 text-black">
       <div className="container mx-auto flex items-center">
-        <div className="navbar-start  ">
+        <div className="navbar-start  flex justify-start items-center">
           <div className="dropdown  lg:hidden">
             <label tabIndex={0} className="btn btn-ghost">
-              Bar
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt=""  className="w-5"/>
             </label>
             <ul
               tabIndex={0}
@@ -36,10 +36,10 @@ const Navbar = () => {
               {NavItems}
             </ul>
           </div>
-          <Link>
+          <Link className="">
             <img
               src="https://i.ibb.co/x7G0RNy/Scratch-Bangladesh-Logo-1.png"
-              className="w-16 ms-3"
+              className="w-16"
             />
           </Link>
         </div>
