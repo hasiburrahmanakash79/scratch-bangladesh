@@ -15,21 +15,25 @@ const Footer = () => {
               href="https://www.facebook.com/"
               target="_blank"
               rel="noreferrer"
+              className="w-7"
             >
-              fb
+              <img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt="" />
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer"
+              className="w-7"
             >
-              ins
+              <img src="https://cdn-icons-png.flaticon.com/256/174/174857.png" alt="" />
             </a>
-            <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-              twi
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer"
+              className="w-7">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt="" />
             </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
-              u
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"
+              className="w-7">
+              <img src="https://cdn-icons-png.freepik.com/256/1384/1384060.png" alt="" />
             </a>
           </div>
         </div>
