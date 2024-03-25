@@ -6,6 +6,7 @@ import Olympiad from "../Pages/Olympiad/Olympiad";
 import Blog from "../Pages/Blog/Blog";
 import BlogDetails from "../Pages/Blog/BlogDetails";
 import Login from "../Pages/RegistrationPage/Login/Login";
+import Registration from "../Pages/RegistrationPage/Registration/Registration";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>
+  },
+  {
+    path: "/signUp",
+    element: <Registration/>
   }
 ]);
 

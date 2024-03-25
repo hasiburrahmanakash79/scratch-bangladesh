@@ -84,7 +84,7 @@ const Olympiad = () => {
       <div >
       <div className="my-10">
       <h1 className="text-3xl font-bold mb-7">Olympiad Photo Gallery: </h1>
-        <div className="grid grid-cols-4 gap-5 ">
+        <div className="grid md:grid-cols-4 grid-cols-2 gap-5 ">
         <PhotoGallery/>
         <PhotoGallery/>
         <PhotoGallery/>
