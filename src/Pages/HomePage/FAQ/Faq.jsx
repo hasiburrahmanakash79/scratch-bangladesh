@@ -1,6 +1,6 @@
 const Faq = () => {
   return (
-    <div className="container mx-auto my-14">
+    <div className="container mx-auto my-14 p-3">
         <h1 className="md:text-5xl text-2xl font-bold mb-5">FAQ</h1>
       <div className="md:grid grid-cols-3 items-center justify-center gap-5">
         <div className="space-y-3 col-span-2">

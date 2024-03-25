@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Tutorial = () => {
   return (
-    <div className="items-center grid-cols-2 gap-10 md:grid container pt-14 mx-auto h-screen">
+    <div className="items-center grid-cols-2 gap-10 md:grid p-3 container pt-14 mx-auto h-screen">
       <div className="">
       <iframe width="100%" height="400" src="https://www.youtube.com/embed/-lv3Y-YKS54?si=Rt2dgxA6l7oF1YQz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>

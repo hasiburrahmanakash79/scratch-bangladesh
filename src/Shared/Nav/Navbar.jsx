@@ -22,7 +22,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-opacity-70  backdrop-blur-md navbar bg-[#F4F1F1] fixed z-10 text-black">
+    <div className="bg-opacity-70 px-3 backdrop-blur-md navbar bg-[#F4F1F1] fixed z-10 text-black">
       <div className="container mx-auto flex items-center">
         <div className="navbar-start  ">
           <div className="dropdown  lg:hidden">

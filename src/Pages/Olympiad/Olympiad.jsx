@@ -2,7 +2,7 @@ import PhotoGallery from "./PhotoGallery";
 
 const Olympiad = () => {
   return (
-    <div className="container pt-28 mx-auto ">
+    <div className="container pt-28 mx-auto p-3">
       <div>
         <h1 className="text-center md:text-5xl text-3xl font-bold">
           বাংলাদেশ স্ক্র্যাচ অলিম্পিয়াড

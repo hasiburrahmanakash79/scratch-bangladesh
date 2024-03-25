@@ -1,6 +1,6 @@
 const AboutUs = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto p-3">
       <div className="items-center grid-cols-2 gap-10 md:grid  h-screen -">
         <div className="">
           <img src="https://scratchbangladesh.com/wp-content/uploads/2024/01/Scratch-Bangladesh-logo-with-picture.png" />
