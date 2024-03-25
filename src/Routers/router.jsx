@@ -4,6 +4,7 @@ import Home from "../Pages/HomePage/Home";
 import AboutUs from "../Pages/AboutUs/AboutUs";
 import Olympiad from "../Pages/Olympiad/Olympiad";
 import Blog from "../Pages/Blog/Blog";
+import BlogDetails from "../Pages/Blog/BlogDetails";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog/>
+      },
+      {
+        path: "/details",
+        element: <BlogDetails/>
       }
     ],
   },
