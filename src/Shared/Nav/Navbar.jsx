@@ -50,6 +50,9 @@ const Navbar = () => {
           <Link className="btn btn-sm btn-primary" to="/login">
             Login
           </Link>
+          <Link to="/profile" className="btn btn-sm btn-primary">
+          profile
+          </Link>
         </div>
       </div>
     </div>
