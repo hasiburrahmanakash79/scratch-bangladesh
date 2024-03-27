@@ -1,8 +1,10 @@
+import FeaturedCard from "../HomePage/Featured/FeaturedCard";
+
 const TeachersProfile = () => {
   return (
     <div className="pt-20 bg-blue-400">
       <div className=" p-5 container mx-auto">
-        <div className="grid grid-cols-3 gap-10">
+        <div className="md:grid grid-cols-3 gap-10">
           <div className="bg-white rounded-xl p-10 col-span-1 flex flex-col justify-center items-center">
             <div className="avatar">
               <div className="w-36 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -64,10 +66,26 @@ const TeachersProfile = () => {
                 </tbody>
               </table>
             </div>
-            <div className="mt-5 p-5 bg-white rounded-xl">
-                <h1 className="text-xl font-bold">Lorem, ipsum dolor.</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ratione sapiente quam impedit deserunt dicta, minus laudantium commodi unde, corrupti ducimus aut nihil beatae labore, ab quod ex pariatur quas velit! Aperiam ipsa non assumenda. Excepturi dignissimos cupiditate, at mollitia laudantium iusto corporis tempore eos quisquam accusamus. Corrupti, nesciunt veritatis.</p>
+          </div>
+        </div>
+        <div className="mt-5 p-5 bg-white rounded-xl">
+              <h1 className="text-xl font-bold">Lorem, ipsum dolor.</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                ratione sapiente quam impedit deserunt dicta, minus laudantium
+                commodi unde, corrupti ducimus aut nihil beatae labore, ab quod
+                ex pariatur quas velit! Aperiam ipsa non assumenda. Excepturi
+                dignissimos cupiditate, at mollitia laudantium iusto corporis
+                tempore eos quisquam accusamus. Corrupti, nesciunt veritatis.
+              </p>
             </div>
+        <div className="bg-white p-5 rounded-xl mt-5">
+          <h1 className="text-xl font-bold">Create Scratch By you</h1>
+          <div className="md:grid grid-cols-4 gap-10 mt-5">
+            <FeaturedCard />
+            <FeaturedCard />
+            <FeaturedCard />
+            <FeaturedCard />
           </div>
         </div>
       </div>
