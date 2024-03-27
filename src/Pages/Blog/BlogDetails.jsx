@@ -1,6 +1,6 @@
 const BlogDetails = () => {
   return (
-    <div className="container mx-auto pt-28">
+    <div className="container mx-auto pt-24 py-7">
       <div className="grid grid-cols-3 gap-5">
         <div className="avatar col-span-1">
           <div className="w-fit rounded">

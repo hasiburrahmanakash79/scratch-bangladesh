@@ -19,33 +19,36 @@ const Blog = () => {
       </p>
 
       <div className=" md:grid grid-cols-3 my-5 gap-5 ">
-        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg mt-5">
-            <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
+        <div className="bg-[#ededed] p-5 rounded-md shadow-lg">
           <div className="avatar">
             <div className="w-fit rounded">
               <img src="https://www.codingal.com/resources/wp-content/uploads/2022/11/Introduction-to-Scratch-coding-740x500-1.png" />
             </div>
           </div>
+            <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, odio sed? Quos exercitationem debitis, repellat perferendis...... <Link to="/details" className="link link-hover text-violet-600">Read more</Link></p>
         </div>
-        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg mt-5">
-            <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
+        <div className="bg-[#ededed] p-5 rounded-md shadow-lg">
           <div className="avatar">
             <div className="w-fit rounded">
-              <img src="https://brightchamps.com/blog/wp-content/uploads/2022/05/Category-Scratch.webp" />
+              <img src="https://www.codingal.com/resources/wp-content/uploads/2022/11/Introduction-to-Scratch-coding-740x500-1.png" />
             </div>
           </div>
+            <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, odio sed? Quos exercitationem debitis, repellat perferendis...... <Link to="/details" className="link link-hover text-violet-600">Read more</Link></p>
         </div>
-        <div className="bg-[#D9D9D9] p-5 rounded-md shadow-lg mt-5">
-            <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
+        <div className="bg-[#ededed] p-5 rounded-md shadow-lg">
           <div className="avatar">
             <div className="w-fit rounded">
-              <img src="https://www.codingal.com/resources/wp-content/uploads/2024/01/Scratch-Coding-blog.png" />
+              <img src="https://www.codingal.com/resources/wp-content/uploads/2022/11/Introduction-to-Scratch-coding-740x500-1.png" />
             </div>
           </div>
+            <p className="text-xl font-semibold my-3">1. Lorem ipsum dolor sit.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, odio sed? Quos exercitationem debitis, repellat perferendis...... <Link to="/details" className="link link-hover text-violet-600">Read more</Link></p>
         </div>
+        
+        
+        
       </div>
     </div>
   );

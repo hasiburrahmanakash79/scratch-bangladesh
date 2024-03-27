@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="  bg-[#D9D9D9] text-black ">
+    <footer className="  bg-[#ededed] text-black ">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5 container mx-auto">
         <div>
-          <span className="footer-title">Scratch Bangladesh</span>
+          <span className="footer-title text-yellow-600">Scratch Bangladesh</span>
           <p>
             আমরা দেশব্যাপী বাংলা ভাষায় প্রোগ্রামিংকে জনপ্রিয় করতে কাজ করে
             যাচ্ছি। বাংলা ভাষায় স্ক্র্যাচ এর উপর টিউটোরিয়াল, প্রজেক্ট আইডিয়া,
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p className="footer-title">Contact Us</p>
+          <p className="footer-title text-yellow-600">Contact Us</p>
           <p className="link link-hover">Call: +880 1998138861</p>
           <p className="link link-hover">scratchbangladesh@gmail.com</p>
           <div className="flex items-center gap-1 mt-3"> 
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <span className="footer-title">Quick Links</span>
+          <span className="footer-title text-yellow-600">Quick Links</span>
           <p className="link link-hover">Home</p>
           <p className="link link-hover">Learn</p>
           <p className="link link-hover">About</p>
@@ -58,13 +58,13 @@ const Footer = () => {
           <p className="link link-hover">Blog</p>
         </div>
         <div>
-          <span className="footer-title">Address</span>
+          <span className="footer-title text-yellow-600">Address</span>
           <p className="link link-hover">Level 12/758</p>
           <p className="link link-hover">Satmasjid Road</p>
           <p className="link link-hover">Dhaka 1209</p>
         </div>
       </div>
-      <div className="bg-[#908E8E] text-center p-5">
+      <div className="bg-[#dddcdc] text-center p-5">
         <p>Copyright © 2024 Scratch Bangladesh</p>
       </div>
     </footer>
