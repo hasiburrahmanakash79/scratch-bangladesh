@@ -64,7 +64,10 @@ const TeachersProfile = () => {
                 </tbody>
               </table>
             </div>
-            <div className="mt-10"></div>
+            <div className="mt-5 p-5 bg-white rounded-xl">
+                <h1 className="text-xl font-bold">Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ratione sapiente quam impedit deserunt dicta, minus laudantium commodi unde, corrupti ducimus aut nihil beatae labore, ab quod ex pariatur quas velit! Aperiam ipsa non assumenda. Excepturi dignissimos cupiditate, at mollitia laudantium iusto corporis tempore eos quisquam accusamus. Corrupti, nesciunt veritatis.</p>
+            </div>
           </div>
         </div>
       </div>
