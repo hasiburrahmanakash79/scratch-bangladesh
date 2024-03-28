@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+
 
 const Hero = () => {
   return (
@@ -13,11 +13,9 @@ const Hero = () => {
             আমরা দেশব্যাপী বাংলা ভাষায় প্রোগ্রামিংকে জনপ্রিয় করতে কাজ করে যাচ্ছি। বাংলা ভাষায় স্ক্র্যাচ এর উপর টিউটোরিয়াল, প্রজেক্ট আইডিয়া, কোর্স সহ বছরব্যাপী নানা আয়োজনের খবর স্ক্র্যাচ বাংলাদেশ ওয়েবসাইটে পাওয়া যাবে।
             </p>
             <div>
-              <Link to="/classes">
-                <button className="btn btn-warning mt-9">
+                <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" className="btn btn-warning mt-9">
                   Create Scratch
-                </button>
-              </Link>
+                </a>
             </div>
           </div>
         </div>

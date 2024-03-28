@@ -7,8 +7,8 @@ const TeachersProfile = () => {
         <div className="md:grid grid-cols-3 gap-10">
           <div className="bg-white rounded-xl p-10 col-span-1 flex flex-col justify-center items-center">
             <div className="avatar">
-              <div className="w-36 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              <div className="w-36 rounded-full ring ring-slate-500 ring-offset-base-100 ring-offset-2">
+                <img src="https://steamdaily.com/wp-content/uploads/2019/05/bill-gates-profile-pic.jpg" />
               </div>
             </div>
             <div className="mt-6 space-y-1 text-center">
