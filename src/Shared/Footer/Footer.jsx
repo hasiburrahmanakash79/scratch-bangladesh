@@ -4,15 +4,15 @@ const Footer = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5 container mx-auto">
         <div>
           <span className="footer-title text-yellow-600">Scratch Bangladesh</span>
-          <p>
+          <p className="leading-7">
             আমরা দেশব্যাপী বাংলা ভাষায় প্রোগ্রামিংকে জনপ্রিয় করতে কাজ করে
             যাচ্ছি। বাংলা ভাষায় স্ক্র্যাচ এর উপর টিউটোরিয়াল, প্রজেক্ট আইডিয়া,
             কোর্স সহ বছরব্যাপী নানা আয়োজনের খবর স্ক্র্যাচ বাংলাদেশ ওয়েবসাইটে
             পাওয়া যাবে।
           </p>
-          <div className="flex gap-3 mt-3">
+          <div className="flex justify-between items-center gap-3 mt-3">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/scratchbangladesh"
               target="_blank"
               rel="noreferrer"
               className="w-7"
@@ -31,7 +31,7 @@ const Footer = () => {
               className="w-7">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt="" />
             </a>
-            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"
+            <a href="https://www.youtube.com/@ScratchBangladesh" target="_blank" rel="noreferrer"
               className="w-7">
               <img src="https://cdn-icons-png.freepik.com/256/1384/1384060.png" alt="" />
             </a>
@@ -40,7 +40,7 @@ const Footer = () => {
         <div>
           <p className="footer-title text-yellow-600">Contact Us</p>
           <p className="link link-hover">Call: +880 1998138861</p>
-          <p className="link link-hover">scratchbangladesh@gmail.com</p>
+          <a className="link link-hover">scratchbangladesh@gmail.com</a>
           <div className="flex items-center gap-1 mt-3"> 
           <label className="input input-bordered flex items-center gap-2 w-2/3">
             

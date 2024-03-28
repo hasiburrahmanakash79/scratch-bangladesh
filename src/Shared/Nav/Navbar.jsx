@@ -13,7 +13,7 @@ const Navbar = () => {
         <Link to="/olympiad">Olympiad</Link>
       </li>
       <li>
-        <Link to="/learn">Learn</Link>
+        <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted">Learn</a>
       </li>
       <li>
         <Link to="/blog">Blog</Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center  hidden md:flex">
-          <ul className="menu menu-horizontal px-1">{NavItems}</ul>
+          <ul className="menu menu-horizontal font-semibold px-1">{NavItems}</ul>
         </div>
         <div className="navbar-end flex items-center justify-end gap-5 mr-5">
           <Link className="btn btn-sm btn-primary" to="/login">

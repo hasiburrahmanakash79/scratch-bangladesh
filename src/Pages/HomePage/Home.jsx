@@ -1,3 +1,4 @@
+import CourseCard from "./CourseCard/CourseCard";
 import Faq from "./FAQ/Faq";
 import Featured from "./Featured/Featured";
 import Hero from "./Hero/Hero";
@@ -10,6 +11,7 @@ const Home = () => {
             <Hero/>
             <Tutorial/>
             <Featured/>
+            <CourseCard/>
             <Faq/>
         </div>
     );

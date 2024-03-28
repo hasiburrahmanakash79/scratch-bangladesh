@@ -1,16 +1,16 @@
 const AboutUs = () => {
   return (
-    <div className="container mx-auto p-3 pt-14">
-      <div className="items-center grid-cols-2 gap-10 md:grid  md:h-screen -">
-        <div className="">
+    <div className="container mx-auto p-3 pt-24">
+      <div className="items-center grid-cols-3 gap-10 md:grid ">
+        <div className="col-span-1">
           <img src="https://scratchbangladesh.com/wp-content/uploads/2024/01/Scratch-Bangladesh-logo-with-picture.png" 
           className="w-full"/>
         </div>
-        <div className="text-center md:text-left">
-          <h1 className="my-3 md:text-5xl text-3xl font-bold">
+        <div className="text-center col-span-2 md:text-left">
+          <h1 className="my-5 md:text-5xl text-3xl font-bold">
             স্ক্র্যাচ বাংলাদেশ
           </h1>
-          <p className="">
+          <p className="leading-7">
             প্রাথমিক বিদ্যালয়ের শিক্ষার্থীদের মধ্যে প্রোগ্রামিং শেখা জনপ্রিয়
             করার লক্ষ্যে একটি নতুন পথ স্ক্র্যাচ বাংলাদেশ নিয়ে আসছে। স্ক্র্যাচ
             একটি ব্লক ভিত্তিক প্রোগ্রামিং ভাষা, একই সাথে স্ক্র্যাচ শিশু-কিশোরদের
@@ -33,8 +33,8 @@ const AboutUs = () => {
       </div>
       <div className="h-screen flex justify-center items-center">
         <iframe
-          width="70%"
-          height="600"
+          width="80%"
+          height="565"
           src="https://www.youtube.com/embed/Bs4bNZRo28Q?si=1ZCkGRCcyNp8hHCy"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

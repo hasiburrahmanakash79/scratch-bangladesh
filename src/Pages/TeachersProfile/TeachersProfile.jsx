@@ -18,7 +18,7 @@ const TeachersProfile = () => {
               <p>Gender: Male</p>
             </div>
           </div>
-          <div className="col-span-2 ">
+          <div className="col-span-2 mt-5">
             <div className="p-5 bg-white rounded-xl ">
               <h1 className="text-xl font-bold">General Information</h1>
               <table className="table border">
