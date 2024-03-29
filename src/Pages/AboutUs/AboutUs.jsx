@@ -37,7 +37,7 @@ const AboutUs = () => {
           height="565"
           src="https://www.youtube.com/embed/Bs4bNZRo28Q?si=1ZCkGRCcyNp8hHCy"
           title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
       </div>
