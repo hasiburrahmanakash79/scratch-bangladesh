@@ -1,3 +1,5 @@
+import Achievement from "./Achievement";
+
 const AboutUs = () => {
   return (
     <div className="container mx-auto p-3 pt-24">
@@ -40,6 +42,9 @@ const AboutUs = () => {
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
+      </div>
+      <div className="p-3">
+        <Achievement/>
       </div>
     </div>
   );
