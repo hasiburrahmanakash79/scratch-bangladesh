@@ -1,10 +1,97 @@
-
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 const Achievement = () => {
-    return (
-        <div>
-            <h1>https://scontent.fdac14-1.fna.fbcdn.net/v/t39.30808-6/424643415_398938695977278_878270218235145916_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeECn9cj-ET378r0zE7piKwIsM1xnKqqNUewzXGcqqo1R4lIgyU1wfxr3couJGDWXEH16hybn6Yr8gaTydfq4SuN&_nc_ohc=fu41cvO3GWAAX8PpsUJ&_nc_oc=Adjsb_KJpxk1HueSlvd43AUxuI-7Jm3g5V-YHpFBGwhZVtOYXzmpdBSToYa8MKx_hCY&_nc_ht=scontent.fdac14-1.fna&oh=00_AfCGRwJ5kQD185MPfcJM6Za3gacp9hbKEAJGFYyBW1Cvuw&oe=660D8848</h1>
+  const [ref, inView] = useInView({
+    threshold: 0.1,
+  });
+
+  return (
+    <section ref={ref} className="">
+      <h1
+        className="text-center text-4xl font-bold py-10"
+      >
+        Our Achievement
+      </h1>
+      <div className=" text-center md:text-left">
+        <div className="p-5">
+          <div>
+            <h2 className="text-3xl font-bold my-5">Lorem ipsum dolor sit.</h2>
+            <p className="md:mb-20 ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempore quis amet architecto laudantium in eos, minus deserunt dolor sit odio pariatur reprehenderit minima molestias eligendi voluptatibus. Numquam, alias eligendi! Eaque ipsum molestiae, non commodi totam deserunt eveniet harum ad sint veritatis fugit maiores earum explicabo atque fugiat maxime. Pariatur?
+            </p>
+          </div>
+          <div className="md:flex justify-evenly text-center gap-20 md:pb-5">
+            <div>
+              <div className="text-[40px]">
+                {inView ? (
+                  <CountUp
+                    className="font-bold"
+                    start={0}
+                    end={105}
+                    duration={4}
+                  />
+                ) : null}
+              </div>
+              <div className="text-sm tracking-[2px]">
+                teacher
+              </div>
+            </div>
+
+            <div>
+              <div className="text-[42px]">
+                {inView ? (
+                  <CountUp
+                    className="font-bold"
+                    start={0}
+                    end={50}
+                    duration={4}
+                  />
+                ) : null}
+                +
+              </div>
+              <div className="text-sm tracking-[2px]">
+                student
+              </div>
+            </div>
+
+            <div>
+              <div className="text-[40px] ">
+                {inView ? (
+                  <CountUp
+                    className="font-bold"
+                    start={50}
+                    end={100}
+                    duration={4}
+                  />
+                ) : null}
+                +
+              </div>
+              <div className="text-sm tracking-[2px]">
+                Lorem, ipsum.
+              </div>
+            </div>
+
+            <div>
+              <div className="text-[40px] ">
+                {inView ? (
+                  <CountUp
+                    className="font-bold"
+                    start={50}
+                    end={100}
+                    duration={4}
+                  />
+                ) : null}
+                +
+              </div>
+              <div className="text-sm tracking-[2px]">
+                Lorem, ipsum.
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default Achievement;
