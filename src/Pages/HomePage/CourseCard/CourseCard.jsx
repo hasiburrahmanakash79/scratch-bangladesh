@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 
 const CourseCard = () => {
   return (
-    <div className="md:grid grid-cols-2 gap-10 container mx-auto p-3">
-      <div className="my-10 bg-[#ededed] rounded-lg hover:shadow-lg hover:shadow-orange-400 border ">
+    
+<div>
+<h1 className="my-3 md:text-5xl text-2xl text-center font-bold md:mt-20 mt-10">পাঠ্যধারাগুলি</h1>
+    <div className="md:grid grid-cols-2 gap-10 container mx-auto p-3"> 
+      <div className="my-10 bg-[#ededed] rounded-lg hover:shadow-lg hover:shadow-orange-400 border  transition duration-150 ease-in delay-200">
         <div className="p-5 text-white">
           <div className="items-center">
             <div className="">
@@ -26,7 +29,7 @@ const CourseCard = () => {
           </div>
         </div>
       </div>
-      <div className="my-10 bg-[#ededed] rounded-lg hover:shadow-lg hover:shadow-orange-400 border ">
+      <div className="my-10 bg-[#ededed] rounded-lg hover:shadow-lg hover:shadow-orange-400 border  transition duration-150 ease-in delay-200">
         <div className="p-5 text-white">
           <div className="items-center">
             <div className="">
@@ -50,6 +53,7 @@ const CourseCard = () => {
         </div>
       </div>
     </div>
+</div>
   );
 };
 
