@@ -22,7 +22,7 @@ const Achievement = () => {
           </div>
           <div className="md:flex justify-evenly text-center gap-20 md:pb-5">
             <div>
-              <div className="text-[40px]">
+              <div className="text-[70px]">
                 {inView ? (
                   <CountUp
                     className="font-bold"
@@ -32,13 +32,13 @@ const Achievement = () => {
                   />
                 ) : null}
               </div>
-              <div className="text-sm tracking-[2px]">
-                teacher
+              <div className="text-lg tracking-[2px]">
+                Teachers
               </div>
             </div>
 
             <div>
-              <div className="text-[42px]">
+              <div className="text-[70px]">
                 {inView ? (
                   <CountUp
                     className="font-bold"
@@ -49,13 +49,13 @@ const Achievement = () => {
                 ) : null}
                 +
               </div>
-              <div className="text-sm tracking-[2px]">
-                student
+              <div className="text-lg tracking-[2px]">
+                Students
               </div>
             </div>
 
             <div>
-              <div className="text-[40px] ">
+              <div className="text-[70px] ">
                 {inView ? (
                   <CountUp
                     className="font-bold"
@@ -66,13 +66,13 @@ const Achievement = () => {
                 ) : null}
                 +
               </div>
-              <div className="text-sm tracking-[2px]">
+              <div className="text-lg tracking-[2px]">
                 Lorem, ipsum.
               </div>
             </div>
 
             <div>
-              <div className="text-[40px] ">
+              <div className="text-[70px] ">
                 {inView ? (
                   <CountUp
                     className="font-bold"
@@ -83,7 +83,7 @@ const Achievement = () => {
                 ) : null}
                 +
               </div>
-              <div className="text-sm tracking-[2px]">
+              <div className="text-lg tracking-[2px]">
                 Lorem, ipsum.
               </div>
             </div>
