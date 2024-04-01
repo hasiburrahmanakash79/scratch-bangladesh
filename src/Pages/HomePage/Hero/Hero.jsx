@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 
 
 const Hero = () => {
+
+  const { t } = useTranslation();
   return (
     <div className="bg-[url('https://projects-static.raspberrypi.org/pathways/assets/scratch-intro.png')] h-screen">
       <div className="p-5 lg:py-[195px] md:py-[160px] py-20 bg-blue-700 text-white bg-opacity-70 h-screen">
@@ -14,7 +17,7 @@ const Hero = () => {
             </p>
             <div>
                 <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" className="btn btn-warning mt-9">
-                  Create Scratch
+                {t("Create Scratch")}
                 </a>
             </div>
           </div>
