@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="  bg-[#ededed] text-black ">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5 container mx-auto">
@@ -51,11 +55,11 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer-title text-yellow-600">Quick Links</span>
-          <p className="link link-hover">Home</p>
-          <p className="link link-hover">Learn</p>
-          <p className="link link-hover">About</p>
-          <p className="link link-hover">Olympiad</p>
-          <p className="link link-hover">Blog</p>
+          <p className="link link-hover">{t("Home")}</p>
+          <p className="link link-hover">{t("About us")}</p>
+          <p className="link link-hover">{t("Olympiad")}</p>
+          <p className="link link-hover">{t("Learn")}</p>
+          <p className="link link-hover">{t("Blog")}</p>
         </div>
         <div>
           <span className="footer-title text-yellow-600">Address</span>

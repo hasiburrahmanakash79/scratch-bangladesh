@@ -11,7 +11,7 @@ function classNames(...classes) {
 let countries = [
   {
     code: "bn",
-    name: "Bangla",
+    name: "বাংলা",
     country_code: "fr",
   },
   {
