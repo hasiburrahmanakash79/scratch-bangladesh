@@ -7,7 +7,7 @@ const Tutorial = () => {
       <iframe width="100%" height="400" src="https://www.youtube.com/embed/Bs4bNZRo28Q?si=EahUPgogqkpxl7nI" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div className="text-center md:text-left">
-        <h1 className="my-3 md:text-6xl text-4xl font-bold uppercase">
+        <h1 className="my-3 md:text-6xl text-4xl font-bold">
           স্ক্র্যাচ বাংলাদেশ
         </h1>
         <p className="my-5">
