@@ -69,16 +69,11 @@ const TeachersProfile = () => {
           </div>
         </div>
         <div className="mt-5 p-5 bg-white rounded-xl">
-              <h1 className="text-xl font-bold">Lorem, ipsum dolor.</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                ratione sapiente quam impedit deserunt dicta, minus laudantium
-                commodi unde, corrupti ducimus aut nihil beatae labore, ab quod
-                ex pariatur quas velit! Aperiam ipsa non assumenda. Excepturi
-                dignissimos cupiditate, at mollitia laudantium iusto corporis
-                tempore eos quisquam accusamus. Corrupti, nesciunt veritatis.
-              </p>
-            </div>
+          <h1 className="text-xl font-bold">Lorem, ipsum dolor.</h1>
+          <p>
+          A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise. A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise.
+          </p>
+        </div>
         <div className="bg-white p-5 rounded-xl mt-5">
           <h1 className="text-xl font-bold">Create Scratch By you</h1>
           <div className="md:grid grid-cols-4 gap-10 mt-5">
