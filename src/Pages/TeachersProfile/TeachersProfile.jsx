@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import FeaturedCard from "../HomePage/Featured/FeaturedCard";
 
 const TeachersProfile = () => {
+  const { t } = useTranslation();
   return (
     <div className="pt-20 bg-blue-400">
       <div className=" p-5 container mx-auto">
@@ -69,9 +71,9 @@ const TeachersProfile = () => {
           </div>
         </div>
         <div className="mt-5 p-5 bg-white rounded-xl">
-          <h1 className="text-xl font-bold">Lorem, ipsum dolor.</h1>
+          <h1 className="text-xl font-bold">Otherhs Information.</h1>
           <p>
-          A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise. A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise.
+         {t("A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise. A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise.")}
           </p>
         </div>
         <div className="bg-white p-5 rounded-xl mt-5">

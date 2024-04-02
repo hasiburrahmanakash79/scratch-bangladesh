@@ -41,19 +41,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div>
-          <p className="footer-title text-yellow-600">Contact Us</p>
-          <p className="link link-hover">Call: +880 1998138861</p>
-          <a className="link link-hover">scratchbangladesh@gmail.com</a>
-          <div className="flex items-center gap-1 mt-3"> 
-          <label className="input input-bordered flex items-center gap-2 w-2/3">
-            
-            <input type="text" className="grow" placeholder="Email" />
-          </label>
-          <button className="btn btn-warning">Send</button>
-          </div>
-        </div>
-        <div>
+        <div className="md:ps-12">
           <span className="footer-title text-yellow-600">Quick Links</span>
           <p className="link link-hover">{t("Home")}</p>
           <p className="link link-hover">{t("About us")}</p>
@@ -66,6 +54,18 @@ const Footer = () => {
           <p className="link link-hover">Level 12/758</p>
           <p className="link link-hover">Satmasjid Road</p>
           <p className="link link-hover">Dhaka 1209</p>
+        </div>
+        <div>
+          <p className="footer-title text-yellow-600">Contact Us</p>
+          <p className="link link-hover">Call: +880 1998138861</p>
+          <a className="link link-hover">scratchbangladesh@gmail.com</a>
+          <div className="flex items-center gap-1 mt-3"> 
+          <label className="input input-bordered flex items-center gap-2 w-2/3">
+            
+            <input type="text" className="grow" placeholder="Email" />
+          </label>
+          <button className="btn btn-warning">Send</button>
+          </div>
         </div>
       </div>
       <div className="bg-[#dddcdc] text-center p-5">
