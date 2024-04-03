@@ -42,6 +42,9 @@ const Navbar = () => {
       <li>
         <Link to="/blog">{t("Blog")}</Link>
       </li>
+      <li>
+        <Link to="/test">Test</Link>
+      </li>
     </>
   );
 

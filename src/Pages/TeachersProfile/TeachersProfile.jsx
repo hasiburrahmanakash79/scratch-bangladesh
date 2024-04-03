@@ -71,7 +71,7 @@ const TeachersProfile = () => {
           </div>
         </div>
         <div className="mt-5 p-5 bg-white rounded-xl">
-          <h1 className="text-xl font-bold">Otherhs Information.</h1>
+          <h1 className="text-xl font-bold">Others Information.</h1>
           <p>
          {t("A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise. A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise.")}
           </p>
