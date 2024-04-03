@@ -99,18 +99,18 @@ const DemoTest = ( ) => {
         <p className='text-xl font-semibold'>{currentQuestion.text}</p>
         <RadioGroup value={reduxSelectedOption} onChange={handleSelectOption}>
           <RadioGroup.Label className='text-sm text-accent '>
-            Select an option:
+            Choose the correct answer
           </RadioGroup.Label>
           <div className='mt-2'>
             {currentQuestion.choices.map(choice => (
               <RadioGroup.Option key={choice.id} value={choice.id}>
                 {({ active, checked }) => (
                   <div
-                    className={`my-4 py-4 border-primary border ${
+                    className={`my-4 py-4 border ${
                       active ? '' : ''
                     } ${
-                      checked ? 'bg-gray-300 outline-none ' : ''
-                    } relative  flex cursor-pointer rounded-lg px-5 shadow-md`}
+                      checked ? 'bg-blue-300 outline-none ' : ''
+                    } relative flex cursor-pointer rounded-lg px-5 shadow-md`}
                   >
                     <div className='flex items-center justify-between w-full'>
                       <div className='flex items-center'>
@@ -135,7 +135,7 @@ const DemoTest = ( ) => {
             ))}
           </div>
         </RadioGroup>
-        <div className='flex justify-end w-11/12 py-4 mx-auto '>
+        <div className='flex justify-end py-4 mx-auto '>
           {currentQuestionIndex === questions.length - 1 ? (
             <Link to='/result' className='btn btn-primary'>
               <button disabled={isSubmitted} onClick={handleSubmit}>
@@ -145,8 +145,8 @@ const DemoTest = ( ) => {
           ) : (
             <button
               disabled={!reduxSelectedOption}
-              className={`btn border outline text-black btn-primary ${
-                !reduxSelectedOption ? 'text-black' : ''
+              className={`btn border outline text-white btn-primary ${
+                !reduxSelectedOption ? '' : ''
               }`}
               onClick={handleNextQuestion}
             >
