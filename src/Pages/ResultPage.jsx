@@ -4,7 +4,7 @@ const ResultPage = () => {
   
     return (
       <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ipsum veniam provident laudantium harum exercitationem excepturi magni, velit fugit ex neque, atque eligendi deserunt, in ipsa quis. Voluptates aliquid rem architecto earum blanditiis expedita? Distinctio laboriosam corrupti officia doloremque laudantium beatae nesciunt tenetur fugiat, ea ipsum quam atque omnis enim!</p>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ratione, maiores in sed corporis non modi, accusamus eveniet, asperiores voluptates consequuntur! Commodi unde reiciendis voluptates nulla blanditiis, eius soluta adipisci dicta, sed consequuntur obcaecati voluptatum veritatis nemo. Reiciendis pariatur cupiditate neque culpa impedit obcaecati distinctio quasi illo, nihil itaque exercitationem recusandae dignissimos. Quae eligendi repellendus laborum nisi ea suscipit ipsa?</h1>
       </div>
     );
   };
