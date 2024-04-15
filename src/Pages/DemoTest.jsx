@@ -61,6 +61,39 @@ const DemoTest = ( ) => {
             { "id": "ag", "text": "Ag" }
           ],
           "correctAnswer": "au"
+        },
+        {
+          "id": 6,
+          "text": "What is the chemical symbol for gold?",
+          "choices": [
+            { "id": "go", "text": "Go" },
+            { "id": "gd", "text": "Gd" },
+            { "id": "au", "text": "Au" },
+            { "id": "ag", "text": "Ag" }
+          ],
+          "correctAnswer": "au"
+        },
+        {
+          "id": 7,
+          "text": "What is the chemical symbol for gold?",
+          "choices": [
+            { "id": "go", "text": "Go" },
+            { "id": "gd", "text": "Gd" },
+            { "id": "au", "text": "Au" },
+            { "id": "ag", "text": "Ag" }
+          ],
+          "correctAnswer": "au"
+        },
+        {
+          "id": 8,
+          "text": "What is the chemical symbol for gold?",
+          "choices": [
+            { "id": "go", "text": "Go" },
+            { "id": "gd", "text": "Gd" },
+            { "id": "au", "text": "Au" },
+            { "id": "ag", "text": "Ag" }
+          ],
+          "correctAnswer": "au"
         }
       ];
       
