@@ -7,95 +7,117 @@ const DemoTest = ( ) => {
 
 
     const questions = [
-        {
-          "id": 1,
-          "text": "What is the capital of France?",
-          "choices": [
-            { "id": "paris", "text": "Paris" },
-            { "id": "london", "text": "London" },
-            { "id": "berlin", "text": "Berlin" },
-            { "id": "madrid", "text": "Madrid" }
-          ],
-          "correctAnswer": "paris"
-        },
-        {
-          "id": 2,
-          "text": "Which planet is known as the 'Red Planet'?",
-          "choices": [
-            { "id": "venus", "text": "Venus" },
-            { "id": "mars", "text": "Mars" },
-            { "id": "jupiter", "text": "Jupiter" },
-            { "id": "saturn", "text": "Saturn" }
-          ],
-          "correctAnswer": "mars"
-        },
-        {
-          "id": 3,
-          "text": "What is the largest mammal in the world?",
-          "choices": [
-            { "id": "elephant", "text": "African Elephant" },
-            { "id": "bluewhale", "text": "Blue Whale" },
-            { "id": "giraffe", "text": "Giraffe" },
-            { "id": "lion", "text": "African Lion" }
-          ],
-          "correctAnswer": "bluewhale"
-        },
-        {
-          "id": 4,
-          "text": "Who wrote the play 'Romeo and Juliet'?",
-          "choices": [
-            { "id": "shakespeare", "text": "William Shakespeare" },
-            { "id": "dickens", "text": "Charles Dickens" },
-            { "id": "austen", "text": "Jane Austen" },
-            { "id": "tolstoy", "text": "Leo Tolstoy" }
-          ],
-          "correctAnswer": "shakespeare"
-        },
-        {
-          "id": 5,
-          "text": "What is the chemical symbol for gold?",
-          "choices": [
-            { "id": "go", "text": "Go" },
-            { "id": "gd", "text": "Gd" },
-            { "id": "au", "text": "Au" },
-            { "id": "ag", "text": "Ag" }
-          ],
-          "correctAnswer": "au"
-        },
-        {
-          "id": 6,
-          "text": "What is the chemical symbol for gold?",
-          "choices": [
-            { "id": "go", "text": "Go" },
-            { "id": "gd", "text": "Gd" },
-            { "id": "au", "text": "Au" },
-            { "id": "ag", "text": "Ag" }
-          ],
-          "correctAnswer": "au"
-        },
-        {
-          "id": 7,
-          "text": "What is the chemical symbol for gold?",
-          "choices": [
-            { "id": "go", "text": "Go" },
-            { "id": "gd", "text": "Gd" },
-            { "id": "au", "text": "Au" },
-            { "id": "ag", "text": "Ag" }
-          ],
-          "correctAnswer": "au"
-        },
-        {
-          "id": 8,
-          "text": "What is the chemical symbol for gold?",
-          "choices": [
-            { "id": "go", "text": "Go" },
-            { "id": "gd", "text": "Gd" },
-            { "id": "au", "text": "Au" },
-            { "id": "ag", "text": "Ag" }
-          ],
-          "correctAnswer": "au"
-        }
-      ];
+      {
+        "id": 1,
+        "text": "What is the capital of France?",
+        "choices": [
+          { "id": "paris", "text": "Paris" },
+          { "id": "london", "text": "London" },
+          { "id": "berlin", "text": "Berlin" },
+          { "id": "madrid", "text": "Madrid" }
+        ],
+        "correctAnswer": "paris"
+      },
+      {
+        "id": 2,
+        "text": "Which planet is known as the 'Red Planet'?",
+        "choices": [
+          { "id": "venus", "text": "Venus" },
+          { "id": "mars", "text": "Mars" },
+          { "id": "jupiter", "text": "Jupiter" },
+          { "id": "saturn", "text": "Saturn" }
+        ],
+        "correctAnswer": "mars"
+      },
+      {
+        "id": 3,
+        "text": "What is the largest mammal in the world?",
+        "choices": [
+          { "id": "elephant", "text": "African Elephant" },
+          { "id": "bluewhale", "text": "Blue Whale" },
+          { "id": "giraffe", "text": "Giraffe" },
+          { "id": "lion", "text": "African Lion" }
+        ],
+        "correctAnswer": "bluewhale"
+      },
+      {
+        "id": 4,
+        "text": "Who wrote the play 'Romeo and Juliet'?",
+        "choices": [
+          { "id": "shakespeare", "text": "William Shakespeare" },
+          { "id": "dickens", "text": "Charles Dickens" },
+          { "id": "austen", "text": "Jane Austen" },
+          { "id": "tolstoy", "text": "Leo Tolstoy" }
+        ],
+        "correctAnswer": "shakespeare"
+      },
+      {
+        "id": 5,
+        "text": "What is the chemical symbol for gold?",
+        "choices": [
+          { "id": "go", "text": "Go" },
+          { "id": "gd", "text": "Gd" },
+          { "id": "au", "text": "Au" },
+          { "id": "ag", "text": "Ag" }
+        ],
+        "correctAnswer": "au"
+      },
+      {
+        "id": 6,
+        "text": "Which country is home to the Kangaroo?",
+        "choices": [
+          { "id": "usa", "text": "United States" },
+          { "id": "australia", "text": "Australia" },
+          { "id": "canada", "text": "Canada" },
+          { "id": "brazil", "text": "Brazil" }
+        ],
+        "correctAnswer": "australia"
+      },
+      {
+        "id": 7,
+        "text": "Who discovered penicillin?",
+        "choices": [
+          { "id": "curie", "text": "Marie Curie" },
+          { "id": "einstein", "text": "Albert Einstein" },
+          { "id": "newton", "text": "Isaac Newton" },
+          { "id": "fleming", "text": "Alexander Fleming" }
+        ],
+        "correctAnswer": "fleming"
+      },
+      {
+        "id": 8,
+        "text": "What is the tallest mountain in the world?",
+        "choices": [
+          { "id": "everest", "text": "Mount Everest" },
+          { "id": "k2", "text": "K2" },
+          { "id": "kilimanjaro", "text": "Kilimanjaro" },
+          { "id": "denali", "text": "Denali" }
+        ],
+        "correctAnswer": "everest"
+      },
+      {
+        "id": 9,
+        "text": "Which artist painted the Mona Lisa?",
+        "choices": [
+          { "id": "vangogh", "text": "Vincent van Gogh" },
+          { "id": "picasso", "text": "Pablo Picasso" },
+          { "id": "davinci", "text": "Leonardo da Vinci" },
+          { "id": "monet", "text": "Claude Monet" }
+        ],
+        "correctAnswer": "davinci"
+      },
+      {
+        "id": 10,
+        "text": "What year did the Titanic sink?",
+        "choices": [
+          { "id": "1905", "text": "1905" },
+          { "id": "1912", "text": "1912" },
+          { "id": "1920", "text": "1920" },
+          { "id": "1930", "text": "1930" }
+        ],
+        "correctAnswer": "1912"
+      }
+    ];
       
 
   const [userAnswers, setUserAnswers] = useState({})
