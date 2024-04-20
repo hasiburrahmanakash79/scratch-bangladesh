@@ -70,20 +70,20 @@ const Navbar = () => {
           <Link className="">
             <img
               src="https://i.ibb.co/x7G0RNy/Scratch-Bangladesh-Logo-1.png"
-              className="w-16"
+              className="w-28"
             />
           </Link>
         </div>
         <div className="navbar-center  hidden md:flex">
-          <ul className="menu menu-horizontal font-semibold px-1">
+          <ul className="menu menu-horizontal text-lg font-semibold px-1">
             {NavItems}
           </ul>
         </div>
-        <div className="navbar-end flex items-center justify-end gap-5 mr-5">
-          <Link className="btn btn-sm btn-primary" to="/login">
+        <div className="navbar-end flex items-center  text-lg gap-5 mr-5">
+          <Link className="btn btn-primary" to="/login">
             {t("Login")}
           </Link>
-          <Link to="/profile" className="btn btn-sm btn-primary">
+          <Link to="/profile" className="btn btn-primary">
             {t("Profile")}
           </Link>
           <div>

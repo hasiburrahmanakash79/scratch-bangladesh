@@ -7,7 +7,7 @@ import Tutorial from "./Tutorial/Tutorial";
 
 const Home = () => {
     return (
-        <div>
+        <div className="container mx-auto">
             <Hero/>
             <Tutorial/>
             <Featured/>
