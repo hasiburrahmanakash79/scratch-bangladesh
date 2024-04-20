@@ -1,10 +1,12 @@
 import FeaturedCard from "./FeaturedCard";
+import { useTranslation } from "react-i18next";
 
 const Featured = () => {
+  const { t } = useTranslation();
   return (
     <div className="container mx-auto mt-20 p-3">
         <h1 className="my-3 md:text-5xl text-2xl text-center font-bold mb-10">
-        ফিচার্ড প্রজেক্ট
+        {t("Featured Project")}
         </h1>
       <div className="md:grid grid-cols-4 gap-10">
         <FeaturedCard/>
