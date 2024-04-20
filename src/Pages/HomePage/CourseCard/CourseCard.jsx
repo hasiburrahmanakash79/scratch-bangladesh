@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 const CourseCard = () => {
+  const { t } = useTranslation();
   return (
     
 <div>
-<h1 className="my-3 md:text-5xl text-2xl text-center font-bold md:mt-20 mt-10">পাঠ্যধারাগুলি</h1>
+<h1 className="my-3 md:text-5xl text-2xl text-center font-bold md:mt-20 mt-10">{t("Courses")}</h1>
     <div className="md:grid grid-cols-2 gap-10 container mx-auto p-3"> 
       <div className="my-10 bg-[#ededed] rounded-lg hover:shadow-lg hover:shadow-orange-400 border  transition duration-150 ease-in delay-200">
         <div className="p-5 text-white">
@@ -19,9 +20,9 @@ const CourseCard = () => {
             <div className="flex justify-between items-center">
               <div className="text-center text-black md:text-left">
                 <h1 className="my-3 text-3xl font-semibold uppercase">
-                  Scratch tips and tricks
+                  {t("Scratch tips and tricks")}
                 </h1>
-                <p>Categories: Scratch Premium</p>
+                <p>{t("Categories")}: {t("Scratch Premium")}</p>
                 <p className="text-sm opacity-40">video tutorial | Paid</p>
               </div>
               <Link className=" btn text-xl btn-primary" to="/"> Start Now</Link>
