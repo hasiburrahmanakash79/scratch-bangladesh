@@ -9,8 +9,6 @@ import Login from "../Pages/RegistrationPage/Login/Login";
 import Registration from "../Pages/RegistrationPage/Registration/Registration";
 import PageNotFound from "../Pages/PageNotFound/PageNotFound";
 import TeachersProfile from "../Pages/TeachersProfile/TeachersProfile";
-import DemoTest from "../Pages/DemoTest";
-import ResultPage from "../Pages/ResultPage";
 
 const router = createBrowserRouter([
   {
@@ -41,14 +39,7 @@ const router = createBrowserRouter([
         path: "/profile",
         element: <TeachersProfile/>
       },
-      {
-        path: "/test",
-        element: <DemoTest/>
-      },
-      {
-        path: "/result",
-        element: <ResultPage/>
-      }
+      
     ],
     
   },

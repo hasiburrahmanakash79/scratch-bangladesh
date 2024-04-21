@@ -1,7 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700:Tiro+Bangla&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700:Tiro+Bangla&display=swap");
 
 #root {
   font-family: 'Space Grotesk', "Tiro Bangla", serif;
   font-weight: 400;
   font-style: normal;
+} */
+
+
+@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/solaimanlipi/stylesheet.css');
+
+#root{
+  font-family: 'SolaimanLipi', serif;
 }
