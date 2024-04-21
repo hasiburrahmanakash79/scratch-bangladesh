@@ -9,10 +9,7 @@ const Footer = () => {
         <div>
           <span className="footer-title text-yellow-600">Scratch Bangladesh</span>
           <p className="leading-7">
-            আমরা দেশব্যাপী বাংলা ভাষায় প্রোগ্রামিংকে জনপ্রিয় করতে কাজ করে
-            যাচ্ছি। বাংলা ভাষায় স্ক্র্যাচ এর উপর টিউটোরিয়াল, প্রজেক্ট আইডিয়া,
-            কোর্স সহ বছরব্যাপী নানা আয়োজনের খবর স্ক্র্যাচ বাংলাদেশ ওয়েবসাইটে
-            পাওয়া যাবে।
+           {t("We Are working to make programming popular country wide. You will find Scratch Programming Tutorials, Project Idea's, Courses and Many more news about Events on Scratch Programming in Scratch bangladesh Website.")}
           </p>
           <div className="flex justify-between items-center gap-3 mt-3">
             <a
