@@ -23,9 +23,9 @@ const CourseCard = () => {
                   {t("Scratch tips and tricks")}
                 </h1>
                 <p>{t("Categories")}: {t("Scratch Premium")}</p>
-                <p className="text-sm opacity-40">video tutorial | Paid</p>
+                <p className="text-sm opacity-40">{t("video tutorial")} | {t("Paid")}</p>
               </div>
-              <Link className=" btn text-xl btn-primary" to="/"> Start Now</Link>
+              <Link className=" btn text-xl btn-primary" to="/"> {t("Start Now")}</Link>
             </div>
           </div>
         </div>
@@ -43,12 +43,12 @@ const CourseCard = () => {
             <div className="flex justify-between items-center">
               <div className="text-center text-black md:text-left">
                 <h1 className="my-3 text-3xl font-semibold uppercase">
-                  সবার জন্য স্ক্র্যাচ প্রোগ্রামিং
+                  {t("Scratch programming for everyone")}
                 </h1>
-                <p>Categories: Scratch Basic</p>
-                <p className="text-sm opacity-40">video tutorial | free</p>
+                <p>{t("Categories")}: {t("Scratch Basic")}</p>
+                <p className="text-sm opacity-40">{t("video tutorial")} | {t("Paid")}</p>
               </div>
-              <Link className=" btn text-xl btn-primary" to="/"> Start Now</Link>
+              <Link className=" btn text-xl btn-primary" to="/">{t("Start Now")}</Link>
             </div>
           </div>
         </div>

@@ -1,7 +1,6 @@
-
+import { useTranslation } from "react-i18next";
 const Olympiad = () => {
-
-
+  const { t } = useTranslation();
   return (
     <div className="container pt-28 mx-auto p-3">
       <div>
@@ -9,19 +8,9 @@ const Olympiad = () => {
           বাংলাদেশ স্ক্র্যাচ অলিম্পিয়াড
         </h1>
         <p className="my-5">
-          স্ক্র্যাচ শেখার মাধ্যমে শিক্ষার্থীরা গেম, অ্যানিমেশন ভিডিও এবং কার্টুন
-          তৈরি করতে পারে। স্ক্র্যাচ প্রোগ্রামিং করতে কোন কোডিং শিখতে হয় না।
-          বিশ্বের মোট ৮০টির অধিক ভাষায় স্ক্র্যাচ প্রোগ্রামিং করার যায়। এখন বাংলা
-          ভাষাও সেই তালিকায় যুক্ত আছে। ফলে স্ক্র্যাচ দিয়ে বাংলা ভাষায়ও কোডিং করা
-          যায়। এটি বাংলা ভাষার জন্য এক নতুন মাইলফলক। ভবিষ্যতে প্রযুক্তি ক্ষেত্রে
-          দক্ষতার জন্য শিক্ষার্থীদের কম্পিউটার প্রোগ্রামিং জানা আবশ্যক। এই
-          লক্ষ্যে বাংলাদেশ সরকার স্কুলের পাঠ্যসূচিতে প্রোগ্রামিং শিক্ষাকে
-          অন্তর্ভূক্ত করেছে। শিক্ষার্থীদেরকে স্ক্র্যাচ এর মাধ্যমে প্রোগ্রামিং
-          শিক্ষায় আরও উৎসাহী করার লক্ষে ২০২৩ সাল থেকে বাংলাদেশে স্ক্র্যাচ
-          অলিম্পিয়াড আয়োজন করা হচ্ছে। <br /> প্রতিযোগিতায় ১ম থেকে ৮ম শ্রেণী
-          পর্যন্ত শিক্ষার্থীরা মোট ৩ টি ক্যাটাগরিতে অংশ নিতে পারে।
+          {t("By learning Scratch, students can create games, animation videos and cartoons. Scratch programming does not require learning any coding. Scratch programming is available in more than 80 languages ​​in the world. Now Bengali language is also included in that list. As a result, coding can also be done in Bengali language with Scratch. This is a new milestone for Bengali language. Students need to know computer programming to be proficient in future technology fields.To this end the Government of Bangladesh has included programming education in the school curriculum. Scratch Olympiad is being organized in Bangladesh from 2023 to encourage students to learn programming through Scratch.  Students from 1st to 8th class can participate in total 3 categories in the competition.")}
         </p>
-        <span className="font-bold">ক্যাটাগরি গুলি হল:</span>
+        <span className="font-bold">{t("Catagories Are:")}</span>
         <div className="ms-5">
           <li>ক্যাটাগরি ১ : ১ম থেকে ৪র্থ শ্রেণী</li>
           <li>ক্যাটাগরি ২ : ৫ম ও ৬ষ্ঠ শ্রেণী</li>
