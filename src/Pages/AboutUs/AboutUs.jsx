@@ -1,6 +1,8 @@
 import Achievement from "./Achievement";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <div className="container mx-auto p-3 pt-24">
       <div className="items-center grid-cols-3 gap-10 md:grid ">
@@ -10,26 +12,10 @@ const AboutUs = () => {
         </div>
         <div className="text-center col-span-2 md:text-left">
           <h1 className="my-5 md:text-5xl text-3xl font-bold">
-            স্ক্র্যাচ বাংলাদেশ
+            {t("Scratch Bangladesh")}
           </h1>
           <p className="leading-7">
-            প্রাথমিক বিদ্যালয়ের শিক্ষার্থীদের মধ্যে প্রোগ্রামিং শেখা জনপ্রিয়
-            করার লক্ষ্যে একটি নতুন পথ স্ক্র্যাচ বাংলাদেশ নিয়ে আসছে। স্ক্র্যাচ
-            একটি ব্লক ভিত্তিক প্রোগ্রামিং ভাষা, একই সাথে স্ক্র্যাচ শিশু-কিশোরদের
-            উপযোগী বিশ্বের সবথেকে বড় প্রোগ্রামিং কমিউনিটি। স্ক্র্যাচ ব্যবহার করে
-            প্রোগ্রামিং লজিক শেখা খুব সহজ হয় এবং ডিজিটাল গল্প, এনিমেশন ভিডিও,
-            গেম ইত্যাদি প্রজেক্ট তৈরি করা যায়। গেম, এনিমেশন, প্রেজেন্টেশন,
-            গ্রাফিক্স আর্ট ওয়ার্ক, মিথস্ক্রিয় গল্প ইত্যাদি বিভিন্ন ধরনের
-            প্রজেক্ট তৈরি করতে যা প্রয়োজন সবকিছু স্ক্র্যাচে সহজেই সম্ভব। এখানে
-            অন্যান্য প্রোগ্রামিং ভাষার মত কীবোর্ডে টাইপ করে কোড লিখতে হয় না, বরং
-            শুধুমাত্র ব্লক ব্যবহার করে কাজ সম্পাদন করা যায়, এতে স্ক্র্যাচ শেখা
-            সহজ হয়। বিশ্বের মোট ৮০ টির অধিক ভাষায় Scratch.mit.edu ওয়েবসাইটে
-            প্রোগ্রামিং করা যায়, তবে বর্তমানে বাংলাকে যোগ করায় এখন বাংলা ভাষায়
-            কোডিং করা সম্ভব। স্ক্র্যাচ বাংলাদেশ বাংলা ভাষায় স্ক্র্যাচের উপর
-            টিউটোরিয়াল, প্রজেক্ট আইডিয়া, কোর্স ইত্যাদি বছরব্যাপী নানা অনুষ্ঠান
-            আয়োজন করে থাকে। স্ক্র্যাচ বাংলাদেশ আমাদের দেশের প্রাথমিক বিদ্যালয়ের
-            শিক্ষার্থীদের জন্য একটি নতুন মাইলফলক, যা প্রোগ্রামিং শেখার নতুন
-            দ্বার উন্মোচন করবে
+            {t("Learning programming is popular among elementary school students Scratch Bangladesh is bringing a new way to do this. scratch A block-base programming language, along with Scratch for kids and teens Useful The world's largest programming community. using scratch Programming logic is very easy to learn and digital stories, animation videos,Games etc. projects can be created. Games, animations, presentations,Graphics art work, interactive stories etc. are of different types Everything needed to create a project is easily possible in Scratch. here Rather than writing code by typing on the keyboard like in other programming languages Using only blocks to perform tasks, learning from scratch is easier. Scratch.mit.edu website in more than 80 languages Programming can be done, but now in Bengali language as Bengali is added Coding is possible. Scratch Bangladesh on scratch in Bengali language Tutorials, Project Ideas, Courses etc. Various events throughout the year organizes Scratch Bangladesh is our country's primary school A new milestone for students, who are new to learning programming will open the door")}
           </p>
         </div>
       </div>

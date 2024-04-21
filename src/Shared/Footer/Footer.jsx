@@ -9,10 +9,7 @@ const Footer = () => {
         <div>
           <span className="footer-title text-yellow-600">Scratch Bangladesh</span>
           <p className="leading-7">
-            আমরা দেশব্যাপী বাংলা ভাষায় প্রোগ্রামিংকে জনপ্রিয় করতে কাজ করে
-            যাচ্ছি। বাংলা ভাষায় স্ক্র্যাচ এর উপর টিউটোরিয়াল, প্রজেক্ট আইডিয়া,
-            কোর্স সহ বছরব্যাপী নানা আয়োজনের খবর স্ক্র্যাচ বাংলাদেশ ওয়েবসাইটে
-            পাওয়া যাবে।
+           {t("We Are working to make programming popular country wide. You will find Scratch Programming Tutorials, Project Idea's, Courses and Many more news about Events on Scratch Programming in Scratch bangladesh Website.")}
           </p>
           <div className="flex justify-between items-center gap-3 mt-3">
             <a
@@ -58,7 +55,7 @@ const Footer = () => {
         <div>
           <p className="footer-title text-yellow-600">Contact Us</p>
           <p className="link link-hover">Call: +880 1998138861</p>
-          <a className="link link-hover">scratchbangladesh@gmail.com</a>
+          <a className="link link-hover break-words">scratchbangladesh@gmail.com</a>
           <div className="flex items-center gap-1 mt-3"> 
           <label className="input input-bordered flex items-center gap-2 w-2/3">
             
