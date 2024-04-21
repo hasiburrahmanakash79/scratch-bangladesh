@@ -5,9 +5,9 @@ const Hero = () => {
 
   const { t } = useTranslation();
   return (
-    <div className="bg-[url('https://projects-static.raspberrypi.org/pathways/assets/scratch-intro.png')]">
-      <div className="p-5 lg:py-[195px] md:py-[160px] py-20 bg-blue-700 text-white bg-opacity-70">
-        <div className="container pt-14 mx-auto">
+    <div className="bg-[url('https://projects-static.raspberrypi.org/pathways/assets/scratch-intro.png')] max-w-screen-2xl mx-auto">
+      <div className="p-5 lg:py-[195px] md:py-[160px] py-20 bg-blue-700 text-white bg-opacity-70 max-w-screen-2xl mx-auto">
+        <div className="pt-14">
           <div className="flex-col justify-center text-center">
             <h1 className="my-3 md:text-6xl text-4xl font-bold">
             {t("Scratch Bangladesh")}

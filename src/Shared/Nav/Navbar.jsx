@@ -52,7 +52,7 @@ const Navbar = () => {
     <div className="bg-opacity-70 backdrop-blur-md navbar bg-[#F4F1F1] fixed z-10 text-black">
       <div className="container mx-auto flex items-center">
         <div className="navbar-start  flex justify-start items-center">
-          <div className="dropdown  lg:hidden">
+          <div className="dropdown  md:hidden">
             <label tabIndex={0} className="btn btn-ghost">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
