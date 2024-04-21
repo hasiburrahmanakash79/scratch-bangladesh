@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="  bg-[#ededed] text-black ">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-5 container mx-auto">
         <div>
-          <span className="footer-title text-yellow-600">Scratch Bangladesh</span>
+          <span className="footer-title text-yellow-600">{t("Scratch Bangladesh")}</span>
           <p className="leading-7">
            {t("We Are working to make programming popular country wide. You will find Scratch Programming Tutorials, Project Idea's, Courses and Many more news about Events on Scratch Programming in Scratch bangladesh Website.")}
           </p>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="md:ps-12">
-          <span className="footer-title text-yellow-600">Quick Links</span>
+          <span className="footer-title text-yellow-600">{t("Quick Links")}</span>
           <p className="link link-hover">{t("Home")}</p>
           <p className="link link-hover">{t("About us")}</p>
           <p className="link link-hover">{t("Olympiad")}</p>
@@ -47,13 +47,13 @@ const Footer = () => {
           <p className="link link-hover">{t("Blog")}</p>
         </div>
         <div>
-          <span className="footer-title text-yellow-600">Address</span>
+          <span className="footer-title text-yellow-600">{t("Address")}</span>
           <p className="link link-hover">Level 12/758</p>
           <p className="link link-hover">Satmasjid Road</p>
           <p className="link link-hover">Dhaka 1209</p>
         </div>
         <div>
-          <p className="footer-title text-yellow-600">Contact Us</p>
+          <p className="footer-title text-yellow-600">{t("Contact Us")}</p>
           <p className="link link-hover">Call: +880 1998138861</p>
           <a className="link link-hover">scratchbangladesh@gmail.com</a>
           <div className="flex items-center gap-1 mt-3"> 
