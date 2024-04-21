@@ -5,26 +5,23 @@ const Olympiad = () => {
     <div className="container pt-28 mx-auto p-3">
       <div>
         <h1 className="text-center md:text-5xl text-3xl font-bold">
-          বাংলাদেশ স্ক্র্যাচ অলিম্পিয়াড
+          {t("Bangladesh Scratch Olympiad")}
         </h1>
         <p className="my-5">
           {t("By learning Scratch, students can create games, animation videos and cartoons. Scratch programming does not require learning any coding. Scratch programming is available in more than 80 languages ​​in the world. Now Bengali language is also included in that list. As a result, coding can also be done in Bengali language with Scratch. This is a new milestone for Bengali language. Students need to know computer programming to be proficient in future technology fields.To this end the Government of Bangladesh has included programming education in the school curriculum. Scratch Olympiad is being organized in Bangladesh from 2023 to encourage students to learn programming through Scratch.  Students from 1st to 8th class can participate in total 3 categories in the competition.")}
         </p>
         <span className="font-bold">{t("Catagories Are:")}</span>
         <div className="ms-5">
-          <li>ক্যাটাগরি ১ : ১ম থেকে ৪র্থ শ্রেণী</li>
-          <li>ক্যাটাগরি ২ : ৫ম ও ৬ষ্ঠ শ্রেণী</li>
-          <li>ক্যাটাগরি ৩ : ৭ম ও ৮ম শ্রেণী</li>
+          <li>{t("Catagory 1")} : {t("Class 1 to CLass 4")}</li>
+          <li>{t("Catagory 2")}: {t("Class 5 and CLass 6")}</li>
+          <li>{t("Catagory 3")} : {t("Class 7 and Class 8")}</li>
         </div>
         <p className="mt-5">
-          প্রতিটি ক্যাটাগরির শিক্ষার্থীদের একটি নির্দিষ্ট গল্পের উপর নির্দিষ্ট
-          কিছু চরিত্র (Sprite) ব্যবহার করে একটি গেইম অথবা এনিমেশন প্রজেক্ট তৈরি
-          করতে হয়। সেক্ষেত্রে অলিম্পিয়াডের সময় প্রশ্নের মধ্যে গল্প ও মোট
-          চরিত্রের (Spite) সংখ্যা উল্লেখ করা থাকে।
+          {t("Students in each category are specific on a particular story Create a game or animation project using some characters (Sprites) have to do In that case the story and the total are in question during the Olympiad The number of characters (Sprite) is mentioned.")}
         </p>
       </div>
       <div>
-        <h1 className="text-3xl font-bold my-5">বিগত বছরের প্রশ্ন:</h1>
+        <h1 className="text-3xl font-bold my-5">{t("Previous Year Questions:")}</h1>
         <div className="items-center grid-cols-3 gap-10 md:grid my-7">
           <div className="col-span-2 mb-3 rounded-lg ">
             <img
