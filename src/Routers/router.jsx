@@ -10,6 +10,8 @@ import Registration from "../Pages/RegistrationPage/Registration/Registration";
 import PageNotFound from "../Pages/PageNotFound/PageNotFound";
 import TeachersProfile from "../Pages/TeachersProfile/TeachersProfile";
 import Dashboard from "../Layouts/Dashboard";
+import AdminHome from "../Pages/Dashboard/AdminHome";
+import ManageUsers from "../Pages/Dashboard/ManageUsers/ManageUsers";
 
 const router = createBrowserRouter([
   {
@@ -22,47 +24,46 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <AboutUs/>
+        element: <AboutUs />,
       },
       {
         path: "/olympiad",
-        element: <Olympiad/>
+        element: <Olympiad />,
       },
       {
         path: "/blog",
-        element: <Blog/>
+        element: <Blog />,
       },
       {
         path: "/details",
-        element: <BlogDetails/>
+        element: <BlogDetails />,
       },
       {
         path: "/profile",
-        element: <TeachersProfile/>
+        element: <TeachersProfile />,
       },
-      
     ],
-    
   },
   {
     path: "/dashboard",
-    element: <Dashboard/>,
-    children:[
-      
-    ]
+    element: <Dashboard />,
+    children: [
+      { path: "/dashboard/adminHome", element: <AdminHome /> },
+      { path: "/dashboard/manageUsers", element: <ManageUsers/>},
+    ],
   },
   {
     path: "/login",
-    element: <Login/>
+    element: <Login />,
   },
   {
     path: "/signUp",
-    element: <Registration/>
+    element: <Registration />,
   },
   {
     path: "*",
-    element: <PageNotFound/>
-  }
+    element: <PageNotFound />,
+  },
 ]);
 
 export default router;

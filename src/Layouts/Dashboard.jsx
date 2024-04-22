@@ -2,17 +2,11 @@ import { useEffect, useState } from 'react'
 import { Link, Outlet } from 'react-router-dom'
 import {
   FaUser,
-  FaCalendarAlt,
-  FaChartBar,
   FaHome,
-  FaCog,
-  FaWallet,
   FaComment,
 } from 'react-icons/fa'
-import { BiBookAdd } from 'react-icons/bi'
 import { AiFillNotification } from 'react-icons/ai'
-import { RiLiveFill } from 'react-icons/ri'
-import { FaClipboardQuestion } from 'react-icons/fa6'
+import { FaImages } from 'react-icons/fa6'
 import { MdHomeWork } from 'react-icons/md'
 import { IconContext } from 'react-icons'
 import arrow from '../assets/control.png'
@@ -40,16 +34,10 @@ const Dashboard = () => {
   const iconMappings = {
     RoleHome: MdHomeWork,
     Users: FaUser,
-    Schedule: FaCalendarAlt,
-    Question: FaClipboardQuestion,
-    Analytics: FaChartBar,
     Home: FaHome,
-    Setting: FaCog,
-    Payment: FaWallet,
-    Live: RiLiveFill,
+    Photos: FaImages,
     Blog: FaComment,
     Notice: AiFillNotification,
-    BookAdd: BiBookAdd
   }
 
   const Menus = [
@@ -61,14 +49,14 @@ const Dashboard = () => {
       gap: true
     },
     {
-      title: 'Users',
+      title: 'Manage Users',
       path: '/dashboard/manageUsers',
       icon: iconMappings.Users,
       role: 'admin',
     },
     {
-      title: 'Create Notice',
-      path: '/dashboard/createNotice',
+      title: 'Create Features',
+      path: '/dashboard/createFeature',
       icon: iconMappings.Notice,
       role: 'admin'
     },
@@ -76,6 +64,12 @@ const Dashboard = () => {
       title: 'Add Blog',
       path: '/dashboard/addBlog',
       icon: iconMappings.Blog,
+      role: 'admin'
+    },
+    {
+      title: 'Add Photo Gallery',
+      path: '/dashboard/addPhoto',
+      icon: iconMappings.Photos,
       role: 'admin'
     },
     {
