@@ -76,12 +76,15 @@ const Navbar = () => {
             {NavItems}
           </ul>
         </div>
-        <div className="navbar-end flex items-center  text-lg gap-5 mr-5">
-          <Link className="btn btn-primary" to="/login">
+        <div className="navbar-end flex items-center  gap-5 mr-5">
+          <Link className="btn text-lg btn-primary" to="/login">
             {t("Login")}
           </Link>
-          <Link to="/profile" className="btn btn-primary">
+          <Link to="/profile" className="btn text-lg btn-primary">
             {t("Profile")}
+          </Link>
+          <Link to="/dashboard" className="btn">
+            {t("Dashboard")}
           </Link>
           <div>
             <div>
@@ -91,11 +94,11 @@ const Navbar = () => {
                 aria-label="usermenu"
               >
                 <Menu.Button
-                  className="group w-full  text-sm text-left font-medium text-gray-700 focus:outline-none"
+                  className="group w-full  text-lg text-left text-gray-700 focus:outline-none"
                   aria-label="usermenu-button"
                 >
                   <span className="flex w-full justify-between items-center">
-                    <GlobeAltIcon className="h-7 w-7 cursor-pointer  text-blue-600" />
+                    <GlobeAltIcon className="h-10 w-10 cursor-pointer  text-blue-600" />
                   </span>
                 </Menu.Button>
                 <Transition
@@ -117,7 +120,7 @@ const Navbar = () => {
                           <Menu.Item key={lng.code}>
                             <button
                               className={classNames(
-                                "flex items-center space-x-2 px-4 py-2 text-sm cursor-pointer"
+                                "flex items-center space-x-2 px-4 py-2 text-lg cursor-pointer"
                               )}
                               onClick={() => i18n.changeLanguage(lng.code)} // used to change language that needs to be rendered
                               disabled={i18n.language === lng.code}

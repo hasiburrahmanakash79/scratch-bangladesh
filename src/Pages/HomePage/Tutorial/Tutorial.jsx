@@ -11,12 +11,12 @@ const Tutorial = () => {
         <h1 className="my-3 md:text-6xl text-4xl font-bold">
           {t("Scratch Bangladesh")}
         </h1>
-        <p className="my-5">
+        <p className="my-5 text-lg">
           {t("Scratch is a block-based programming language through which People of any age, from elementary school students Can easily learn programming logic and besides games, animation videos, art Various projects can be created. Scratch is used in more than 70 languages and more than 200 countries around the world. Since 2021, Scratch is also being used in Bengali language. Currently there is an offline desktop version of Scratch available in Bengali along with the main website and Scratch editor.")}
         </p>
         <div>
           <Link to="/classes">
-            <button className="btn btn-warning mt-4">
+            <button className="btn text-lg btn-warning mt-4">
               {t("Learn Scratch in Bangla")}
             </button>
           </Link>
