@@ -71,13 +71,7 @@ const Dashboard = () => {
       title: 'Users',
       path: '/dashboard/manageUsers',
       icon: iconMappings.Users,
-      role: 'admin'
-    },
-    {
-      title: 'All Payments',
-      path: '/dashboard/allPayments',
-      icon: iconMappings.Payment,
-      role: 'admin'
+      role: 'admin',
     },
     {
       title: 'Create Notice',
@@ -86,74 +80,11 @@ const Dashboard = () => {
       role: 'admin'
     },
     {
-      title: 'Create Subject',
-      path: '/dashboard/createSubject',
-      icon: iconMappings.BookAdd,
-      role: 'admin'
-    },
-    {
-      title: 'Instructor Home ',
-      path: '/dashboard/instructorHome',
-      icon: iconMappings.RoleHome,
-      role: 'instructor',
-      gap: true
-    },
-    {
-      title: 'Set Question',
-      path: '/dashboard/createQues',
-      icon: iconMappings.Question,
-      role: 'instructor'
-    },
-    {
-      title: 'Create Live Exam',
-      path: '/dashboard/createLiveExam',
-      icon: iconMappings.Live,
-      role: 'instructor'
-    },
-    {
       title: 'Add Blog',
       path: '/dashboard/addBlog',
       icon: iconMappings.Blog,
-      role: 'instructor'
+      role: 'admin'
     },
-    {
-      title: 'Written Answers Review',
-      path: '/dashboard/written-review',
-      icon: iconMappings.Blog,
-      role: 'instructor'
-    },
-    {
-      title: 'User Home',
-      path: '/dashboard/userHome',
-      icon: iconMappings.RoleHome,
-      role: 'user',
-      gap: true
-    },
-    {
-      title: 'Payment History',
-      path: '/dashboard/paymentHistory',
-      icon: iconMappings.Payment,
-      role: 'user'
-    },
-    {
-      title: 'Notice Board',
-      path: '/dashboard/noticeBoard',
-      icon: iconMappings.Notice,
-      role: 'user'
-    },
-    {
-      title: 'Applied Live Exam',
-      path: '/dashboard/appliedLiveExam',
-      icon: iconMappings.Live,
-      role: 'user'
-    },
-    {
-      title: 'Student Analytics',
-      path: '/dashboard/allgivenExam',
-      icon: iconMappings.Analytics,
-      role: 'user'
-    },
-
     {
       title: 'Home ',
       path: '/',
@@ -173,7 +104,7 @@ const Dashboard = () => {
       <div
         className={` ${
           open ? 'w-56 p-4' : 'w-14 text-center '
-        }   h-screen  fixed left-0 top-0 bottom-0 z-50 pt-8  duration-500 transition-all`}
+        }   h-screen  fixed left-0 top-0 bottom-0 bg-blue-700 z-50 pt-8  duration-500 transition-all`}
       >
         <img
           src={arrow}
@@ -183,14 +114,14 @@ const Dashboard = () => {
         />
         <ul
           className={` ${
-            open ? '' : ' flex flex-col items-center justify-center'
+            open ? '' : 'flex flex-col items-center justify-center'
           }`}
         >
           {isAdmin
             ? adminMenus.map((Menu, index) => (
-              <Link to={Menu.path}   key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-primary text-sm items-center gap-x-4 ${
+              <Link to={Menu.path}   key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-white text-sm items-center gap-x-4 ${
                 Menu.gap ? 'mt-9' : 'mt-2'
-              } ${index === 0 && ' hover:bg-primary'}`}>
+              } ${index === 0 && ' hover:bg-white'}`}>
                 <li
              
              className='flex items-center gap-x-4'
@@ -210,13 +141,12 @@ const Dashboard = () => {
                 </li>
                 </Link>
               ))
-            : //  Instructor menus
-    
+            : 
             // User menus
               userMenus.map((Menu, index) => (
                 <Link to={Menu.path} key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-primary text-sm items-center gap-x-4 ${
                   Menu.gap ? 'mt-9' : 'mt-2'
-                } ${index === 0 && ' hover:bg-primary'}`}>
+                } ${index === 0 && ' hover:bg-white'}`}>
                 <li
                   
                   className='flex items-center gap-x-4'
@@ -237,7 +167,7 @@ const Dashboard = () => {
                 </Link>
               ))}
           {generalMenus.map((Menu, index) => (
-            <Link  to={Menu.path}  key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-primary text-sm items-center gap-x-4 ${
+            <Link  to={Menu.path}  key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-white text-sm items-center gap-x-4 ${
               Menu.gap ? 'mt-9' : 'mt-2'
             } ${index === 0 && ' hover:bg-primary'}`}>
             <li
