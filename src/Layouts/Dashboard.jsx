@@ -61,20 +61,26 @@ const Dashboard = () => {
       gap: true
     },
     {
-      title: 'Users',
+      title: 'Manage Users',
       path: '/dashboard/manageUsers',
       icon: iconMappings.Users,
       role: 'admin',
     },
     {
-      title: 'Create Notice',
-      path: '/dashboard/createNotice',
+      title: 'Create Features',
+      path: '/dashboard/createFeature',
       icon: iconMappings.Notice,
       role: 'admin'
     },
     {
       title: 'Add Blog',
       path: '/dashboard/addBlog',
+      icon: iconMappings.Blog,
+      role: 'admin'
+    },
+    {
+      title: 'Add PhotoGallery',
+      path: '/dashboard/addPhoto',
       icon: iconMappings.Blog,
       role: 'admin'
     },
