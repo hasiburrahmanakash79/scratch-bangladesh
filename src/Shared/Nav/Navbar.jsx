@@ -83,6 +83,9 @@ const Navbar = () => {
           <Link to="/profile" className="btn text-lg btn-primary">
             {t("Profile")}
           </Link>
+          <Link to="/dashboard" className="btn">
+            {t("Dashboard")}
+          </Link>
           <div>
             <div>
               <Menu
