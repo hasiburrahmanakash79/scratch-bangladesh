@@ -22,7 +22,6 @@ const Dashboard = () => {
 
   const isAdmin = true
 
-  // Add an useEffect to detect screen width on component mount and resize
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -31,14 +30,8 @@ const Dashboard = () => {
         setOpen(true)
       }
     }
-
-    // Initial call
     handleResize()
-
-    // Attach event listener for window resize
     window.addEventListener('resize', handleResize)
-
-    // Cleanup
     return () => {
       window.removeEventListener('resize', handleResize)
     }
@@ -99,12 +92,12 @@ const Dashboard = () => {
   const generalMenus = Menus.filter(menu => menu.role === 'general')
 
   return (
-    <div className='flex '>
+    <div className='flex'>
       {/* Dashboard Sidebar content */}
       <div
         className={` ${
-          open ? 'w-56 p-4' : 'w-14 text-center '
-        }   h-screen  fixed left-0 top-0 bottom-0 bg-blue-700 z-50 pt-8  duration-500 transition-all`}
+          open ? 'w-56 p-4' : 'w-14 text-center'
+        }   h-screen  fixed left-0 top-0 bottom-0 bg-black text-white z-50 pt-8  duration-500 transition-all`}
       >
         <img
           src={arrow}
@@ -119,7 +112,7 @@ const Dashboard = () => {
         >
           {isAdmin
             ? adminMenus.map((Menu, index) => (
-              <Link to={Menu.path}   key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-white text-sm items-center gap-x-4 ${
+              <Link to={Menu.path}   key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-white hover:text-black text-sm items-center gap-x-4 ${
                 Menu.gap ? 'mt-9' : 'mt-2'
               } ${index === 0 && ' hover:bg-white'}`}>
                 <li
@@ -167,7 +160,7 @@ const Dashboard = () => {
                 </Link>
               ))}
           {generalMenus.map((Menu, index) => (
-            <Link  to={Menu.path}  key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-white text-sm items-center gap-x-4 ${
+            <Link  to={Menu.path}  key={index} className={`flex rounded-md p-2 cursor-pointer hover: hover:bg-white  hover:text-black  text-sm items-center gap-x-4 ${
               Menu.gap ? 'mt-9' : 'mt-2'
             } ${index === 0 && ' hover:bg-primary'}`}>
             <li
