@@ -1,8 +1,7 @@
-@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/bangla/stylesheet.css');
-
+@import url('https://cdn.rawgit.com/sh4hids/bangla-web-fonts/solaimanlipi/stylesheet.css');
 
 #root{
-  font-family: 'Bangla', serif;
+  font-family: 'SolaimanLipi', serif;
 }
 
 @tailwind base;
