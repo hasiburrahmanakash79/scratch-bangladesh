@@ -17,7 +17,7 @@ const CourseCard = () => {
                 alt=""
               />
             </div>
-            <div className="flex justify-between items-center">
+            <div className="md:flex justify-between items-center">
               <div className="text-center text-black md:text-left">
                 <h1 className="my-3 text-3xl font-semibold uppercase">
                   {t("Scratch tips and tricks")}
@@ -40,7 +40,7 @@ const CourseCard = () => {
                 alt=""
               />
             </div>
-            <div className="flex justify-between items-center">
+            <div className="md:flex justify-between items-center">
               <div className="text-center text-black md:text-left">
                 <h1 className="my-3 text-3xl font-semibold uppercase">
                   {t("Scratch programming for everyone")}

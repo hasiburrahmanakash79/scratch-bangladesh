@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className="container mx-auto p-3 pt-24">
       <div className="items-center grid-cols-3 gap-10 md:grid ">
         <div className="col-span-1">
-          <img src="https://scratchbangladesh.com/wp-content/uploads/2024/01/Scratch-Bangladesh-logo-with-picture.png" 
+          <img src="https://logos-world.net/wp-content/uploads/2023/08/Scratch-Emblem-500x281.png" 
           className="w-full"/>
         </div>
         <div className="text-center col-span-2 md:text-left">
@@ -19,7 +19,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="h-screen flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center mt-10">
         <iframe
           width="80%"
           height="565"
@@ -29,7 +29,7 @@ const AboutUs = () => {
           allowfullscreen
         ></iframe>
       </div>
-      <div className="p-3">
+      <div className="">
         <Achievement/>
       </div>
     </div>
