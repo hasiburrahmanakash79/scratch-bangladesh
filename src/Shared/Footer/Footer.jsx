@@ -74,9 +74,7 @@ const Footer = () => {
         </div>
         <div>
           <span className="footer-title text-yellow-600">{t("Address")}</span>
-          <p className="link link-hover">Level 12/758</p>
-          <p className="link link-hover">Satmasjid Road</p>
-          <p className="link link-hover">Dhaka 1209</p>
+          <p className="link link-hover">Level 12/758 <br /> Satmasjid Road <br />Dhaka 1209</p>
         </div>
         <div>
           <p className="footer-title text-yellow-600">{t("Contact Us")}</p>

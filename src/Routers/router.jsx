@@ -12,6 +12,9 @@ import TeachersProfile from "../Pages/TeachersProfile/TeachersProfile";
 import Dashboard from "../Layouts/Dashboard";
 import AdminHome from "../Pages/Dashboard/AdminHome";
 import ManageUsers from "../Pages/Dashboard/ManageUsers/ManageUsers";
+import CreateFeatures from "../Pages/Dashboard/CreateFeatures/CreateFeatures";
+import AddBlog from "../Pages/Dashboard/AddBlog/AddBlog";
+import AddGallery from "../Pages/Dashboard/AddGallery/AddGallery";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +53,9 @@ const router = createBrowserRouter([
     children: [
       { path: "/dashboard/adminHome", element: <AdminHome /> },
       { path: "/dashboard/manageUsers", element: <ManageUsers/>},
+      { path: "/dashboard/createFeature", element: <CreateFeatures/>},
+      { path: "/dashboard/addBlog", element: <AddBlog/>},
+      { path: "/dashboard/addPhoto", element: <AddGallery/>},
     ],
   },
   {
