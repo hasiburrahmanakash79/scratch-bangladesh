@@ -8,12 +8,12 @@ const Achievement = () => {
   return (
     <section ref={ref} className="">
       <h1
-        className="text-center text-4xl font-bold py-10"
+        className="text-center text-6xl font-bold py-10"
       >
         Our Achievement
       </h1>
       <div className=" text-center md:text-left">
-        <div className="p-5">
+        <div className="p-3">
           <div>
             <h2 className="text-3xl font-bold my-5">Lorem ipsum dolor sit.</h2>
             <p className="md:mb-20 ">
