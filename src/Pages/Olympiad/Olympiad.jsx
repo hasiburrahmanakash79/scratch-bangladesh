@@ -15,13 +15,13 @@ const Olympiad = () => {
         <span className="font-bold">{t("Catagories Are:")}</span>
         <div className="ms-5">
           <li>
-            {t("Catagory 1")} : {t("Class 1 to CLass 4")}
+            {t("Category 1")} : {t("Class 1 to CLass 4")}
           </li>
           <li>
-            {t("Catagory 2")}: {t("Class 5 and CLass 6")}
+            {t("Category 2")}: {t("Class 5 and CLass 6")}
           </li>
           <li>
-            {t("Catagory 3")} : {t("Class 7 and Class 8")}
+            {t("Category 3")} : {t("Class 7 and Class 8")}
           </li>
         </div>
         <p className="mt-5">
