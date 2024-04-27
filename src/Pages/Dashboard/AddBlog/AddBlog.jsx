@@ -2,8 +2,7 @@
 const AddBlog = () => {
     return (
         <div>
-            <p>Add Blog</p>
-            
+            <p>Add Blog</p> 
         </div>
     );
 };
