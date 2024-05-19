@@ -1,4 +1,7 @@
 import { useTranslation } from "react-i18next";
+
+
+
 const Olympiad = () => {
   const { t } = useTranslation();
   return (
