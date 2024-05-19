@@ -46,7 +46,7 @@ const Olympiad = () => {
               <h1>Scratch Olympiad 2024 (Upcomming...)</h1>
             </div>
             <div className="p-2 bg-white rounded-md shadow-lg link link-hover hover:bg-blue-300">
-              <a href="" target="_blank">
+              <a href="https://drive.google.com/file/d/1irZJJC3QRJYDfvgO_OYrujK4Y_GOW-tX/view?usp=sharing" target="_blank">
                 Scratch Olympiad 2023
               </a>
             </div>
