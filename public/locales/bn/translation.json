@@ -30,9 +30,14 @@
   "Catagories Are:": "ক্যাটাগরি গুলি হল:",
   "Bangladesh Scratch Olympiad": "বাংলাদেশ স্ক্র্যাচ অলিম্পিয়াড",
   "Students in each category are specific on a particular story Create a game or animation project using some characters (Sprites) have to do In that case the story and the total are in question during the Olympiad The number of characters (Sprite) is mentioned.": "প্রতিটি ক্যাটাগরির শিক্ষার্থীদের একটি নির্দিষ্ট গল্পের উপর নির্দিষ্টকিছু চরিত্র (Sprite) ব্যবহার করে একটি গেইম অথবা এনিমেশন প্রজেক্ট তৈরি করতে হয়। সেক্ষেত্রে অলিম্পিয়াডের সময় প্রশ্নের মধ্যে গল্প ও মোট চরিত্রের (Sprite) সংখ্যা উল্লেখ করা থাকে।",
-  "Catagory 1": "ক্যাটাগরি ১", "Class 1 to CLass 4" : "১ম থেকে ৪র্থ শ্রেণী",
-  "Catagory 2": "ক্যাটাগরি ২", "Class 5 and CLass 6" : "৫ম ও ৬ষ্ঠ শ্রেণী",
-  "Catagory 3": "ক্যাটাগরি ৩", "Class 7 and Class 8" : "৭ম ও ৮ম শ্রেণী",
+  "Category 1": "ক্যাটাগরি ১", "Class 1 to CLass 4" : "১ম থেকে ৪র্থ শ্রেণী",
+  "Category 2": "ক্যাটাগরি ২", "Class 5 and CLass 6" : "৫ম ও ৬ষ্ঠ শ্রেণী",
+  "Category 3": "ক্যাটাগরি ৩", "Class 7 and Class 8" : "৭ম ও ৮ম শ্রেণী",
   "Previous Year Questions:" : "বিগত বছরের প্রশ্ন:",
-  "Olympiad Photo Gallery:" : "অলিম্পিয়াড ফটো গ্যালারি:"
+  "Olympiad Photo Gallery:" : "অলিম্পিয়াড ফটো গ্যালারি:",
+  "Address" : "ঠিকানা",
+  "Contact Us" : "যোগাযোগ করুন",
+  "Dhaka 1209" : "ঢাকা 1209",
+  "Quick Links" : "কুইক লিংক"
+
 }

@@ -9,6 +9,12 @@ import Login from "../Pages/RegistrationPage/Login/Login";
 import Registration from "../Pages/RegistrationPage/Registration/Registration";
 import PageNotFound from "../Pages/PageNotFound/PageNotFound";
 import TeachersProfile from "../Pages/TeachersProfile/TeachersProfile";
+import Dashboard from "../Layouts/Dashboard";
+import AdminHome from "../Pages/Dashboard/AdminHome";
+import ManageUsers from "../Pages/Dashboard/ManageUsers/ManageUsers";
+import CreateFeatures from "../Pages/Dashboard/CreateFeatures/CreateFeatures";
+import AddBlog from "../Pages/Dashboard/AddBlog/AddBlog";
+import AddGallery from "../Pages/Dashboard/AddGallery/AddGallery";
 
 const router = createBrowserRouter([
   {
@@ -21,40 +27,49 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <AboutUs/>
+        element: <AboutUs />,
       },
       {
         path: "/olympiad",
-        element: <Olympiad/>
+        element: <Olympiad />,
       },
       {
         path: "/blog",
-        element: <Blog/>
+        element: <Blog />,
       },
       {
         path: "/details",
-        element: <BlogDetails/>
+        element: <BlogDetails />,
       },
       {
         path: "/profile",
-        element: <TeachersProfile/>
+        element: <TeachersProfile />,
       },
-      
     ],
-    
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
+      { path: "/dashboard/adminHome", element: <AdminHome /> },
+      { path: "/dashboard/manageUsers", element: <ManageUsers/>},
+      { path: "/dashboard/createFeature", element: <CreateFeatures/>},
+      { path: "/dashboard/addBlog", element: <AddBlog/>},
+      { path: "/dashboard/addPhoto", element: <AddGallery/>},
+    ],
   },
   {
     path: "/login",
-    element: <Login/>
+    element: <Login />,
   },
   {
     path: "/signUp",
-    element: <Registration/>
+    element: <Registration />,
   },
   {
     path: "*",
-    element: <PageNotFound/>
-  }
+    element: <PageNotFound />,
+  },
 ]);
 
 export default router;

@@ -4,7 +4,7 @@ import FeaturedCard from "../HomePage/Featured/FeaturedCard";
 const TeachersProfile = () => {
   const { t } = useTranslation();
   return (
-    <div className="pt-20 bg-blue-400">
+    <div className="pt-28 bg-blue-400">
       <div className=" p-5 container mx-auto">
         <div className="md:grid grid-cols-3 gap-10">
           <div className="bg-white rounded-xl p-10 col-span-1 flex flex-col justify-center items-center">

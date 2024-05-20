@@ -23,6 +23,7 @@ let countries = [
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
+  const user = true;
   const NavItems = (
     <>
       <li>
@@ -54,7 +55,7 @@ const Navbar = () => {
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
                 alt=""
-                className="w-5"
+                className="w-10"
               />
             </label>
             <ul
@@ -76,26 +77,62 @@ const Navbar = () => {
             {NavItems}
           </ul>
         </div>
-        <div className="navbar-end flex items-center  text-lg gap-5 mr-5">
-          <Link className="btn btn-primary" to="/login">
-            {t("Login")}
-          </Link>
-          <Link to="/profile" className="btn btn-primary">
-            {t("Profile")}
-          </Link>
+        <div className="navbar-end flex items-center  gap-5 mr-5">
+          {user ? (
+            <>
+              <div className="dropdown dropdown-end ml-5">
+                <div className="tooltip tooltip-left" data-tip="User Name">
+                  <label
+                    tabIndex={0}
+                    className="btn btn-ghost btn-circle avatar"
+                  >
+                    <div className="w-10 rounded-full">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/800px-User_icon_2.svg.png" />
+                    </div>
+                  </label>
+                </div>
+
+                <ul
+                  tabIndex={0}
+                  className="mt-3 p-2 shadow bg-blue-600 text-white menu menu-compact dropdown-content rounded-box w-52"
+                >
+                  <li>
+                    <Link to="/profile" className="">
+                      {t("Your Profile")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/dashboard" className="">
+                      {t("Dashboard")}
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="w-full">Log Out</Link>
+                  </li>
+                </ul>
+              </div>
+            </>
+          ) : (
+            <>
+              <Link className="btn text-lg btn-primary" to="/login">
+                {t("Login")}
+              </Link>
+            </>
+          )}
+
           <div>
             <div>
               <Menu
                 as="div"
-                className="px-3 pl-0 relative flex"
+                className=" pl-0 relative flex"
                 aria-label="usermenu"
               >
                 <Menu.Button
-                  className="group w-full  text-sm text-left font-medium text-gray-700 focus:outline-none"
+                  className="group w-full  text-lg text-left text-gray-700 focus:outline-none"
                   aria-label="usermenu-button"
                 >
                   <span className="flex w-full justify-between items-center">
-                    <GlobeAltIcon className="h-7 w-7 cursor-pointer  text-blue-600" />
+                    <GlobeAltIcon className="h-10 w-10 cursor-pointer text-blue-600" />
                   </span>
                 </Menu.Button>
                 <Transition
@@ -117,7 +154,7 @@ const Navbar = () => {
                           <Menu.Item key={lng.code}>
                             <button
                               className={classNames(
-                                "flex items-center space-x-2 px-4 py-2 text-sm cursor-pointer"
+                                "flex items-center space-x-2 px-4 py-2 text-lg cursor-pointer"
                               )}
                               onClick={() => i18n.changeLanguage(lng.code)} // used to change language that needs to be rendered
                               disabled={i18n.language === lng.code}
