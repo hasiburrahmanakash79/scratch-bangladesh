@@ -180,30 +180,6 @@ const Olympiad = () => {
           </div>
         </div>
       </div>
-      <div className="grid gap-4">
-        <div>
-          <img
-            className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
-            src={active}
-            alt=""
-          />
-        </div>
-        <div className="flex gap-4">
-          {data.map(({ imgelink }, index) => (
-            <div
-              key={index}
-              className=" "
-            >
-              <img
-                onClick={() => setActive(imgelink)}
-                src={imgelink}
-                className="h-20  max-w-full cursor-pointer rounded-lg object-cover object-center"
-                alt="gallery-image"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 };
