@@ -4,10 +4,10 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="  bg-[#ededed] text-black ">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 px-3 py-10 container mx-auto">
-        <div>
-          <span className="footer-title text-yellow-600">
+    <footer className="  bg-[#ededed] text-black md:text-lg text-sm">
+      <div className="md:grid grid-cols-4 gap-5 px-3 py-10 container mx-auto">
+        <div className="col-span-1 ">
+          <span className="footer-title text-lg text-yellow-600">
             {t("Scratch Bangladesh")}
           </span>
           <p className="leading-7">
@@ -15,7 +15,7 @@ const Footer = () => {
               "We Are working to make programming popular country wide. You will find Scratch Programming Tutorials, Project Idea's, Courses and Many more news about Events on Scratch Programming in Scratch bangladesh Website."
             )}
           </p>
-          <div className="flex justify-between items-center gap-3 mt-3">
+          <div className="flex justify-evenly items-center gap-3 mt-3">
             <a
               href="https://www.facebook.com/scratchbangladesh"
               target="_blank"
@@ -62,8 +62,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="md:ps-12">
-          <span className="footer-title text-yellow-600">
+        <div className="col-span-2 my-7 md:my-0 flex justify-evenly">
+        <div className="">
+          <span className="footer-title text-lg text-yellow-600">
             {t("Quick Links")}
           </span>
           <p className="link link-hover">{t("Home")}</p>
@@ -72,17 +73,18 @@ const Footer = () => {
           <p className="link link-hover">{t("Learn")}</p>
           <p className="link link-hover">{t("Blog")}</p>
         </div>
-        <div>
-          <span className="footer-title text-yellow-600">{t("Address")}</span>
+        <div className="">
+          <span className="footer-title text-lg text-yellow-600">{t("Address")}</span>
           <p className="link link-hover">Level 12/758 <br /> Satmasjid Road <br />Dhaka 1209</p>
         </div>
-        <div>
-          <p className="footer-title text-yellow-600">{t("Contact Us")}</p>
+        </div>
+        <div className="col-span-1 md:text-start text-center ">
+          <p className="footer-title text-lg text-yellow-600">{t("Contact Us")}</p>
           <p className="link link-hover">Call: +880 1998138861</p>
           <a className="link link-hover break-words">
             scratchbangladesh@gmail.com
           </a>
-          <div className="md:flex items-center gap-1 mt-3">
+          <div className="flex items-center justify-center md:justify-start gap-1 mt-3">
             <label className="input input-bordered flex items-center gap-2 w-2/3">
               <input type="text" className="grow" placeholder="Email" />
             </label>
