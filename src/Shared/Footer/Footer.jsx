@@ -5,7 +5,7 @@ const Footer = () => {
 
   return (
     <footer className="  bg-[#ededed] text-black ">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 p-3 container mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5 px-3 py-10 container mx-auto">
         <div>
           <span className="footer-title text-yellow-600">
             {t("Scratch Bangladesh")}

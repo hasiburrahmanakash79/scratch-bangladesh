@@ -20,7 +20,7 @@ const TeachersProfile = () => {
               <p>Gender: Male</p>
             </div>
           </div>
-          <div className="col-span-2 mt-5">
+          <div className="col-span-2 mt-5 md:mt-0">
             <div className="p-5 bg-white rounded-xl ">
               <h1 className="text-xl font-bold">General Information</h1>
               <table className="table border">
@@ -76,7 +76,7 @@ const TeachersProfile = () => {
          {t("A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise. A user profile is a collection of settings and information associated with a user. It contains critical information that is used to identify an individual, such as their name, age, portrait photograph and individual characteristics such as knowledge or expertise.")}
           </p>
         </div>
-        <div className="bg-white p-5 rounded-xl mt-5">
+        <div className="bg-white p-5 rounded-xl my-5">
           <h1 className="text-xl font-bold">Create Scratch By you</h1>
           <div className="md:grid grid-cols-4 gap-10 mt-5">
             <FeaturedCard />

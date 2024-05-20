@@ -8,7 +8,7 @@ const Achievement = () => {
   return (
     <section ref={ref} className="">
       <h1
-        className="text-center text-6xl font-bold py-10"
+        className="text-center md:text-6xl text-3xl font-bold py-10"
       >
         Our Achievement
       </h1>

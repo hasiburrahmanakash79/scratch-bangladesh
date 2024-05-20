@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const AboutUs = () => {
   const { t } = useTranslation();
   return (
-    <div className="container mx-auto p-3 pt-24">
+    <div className="container mx-auto p-3 mb:pt-40 pt-24">
       <div className="items-center grid-cols-3 gap-10 md:grid ">
         <div className="col-span-1">
           <img src="https://logos-world.net/wp-content/uploads/2023/08/Scratch-Emblem-500x281.png" 
