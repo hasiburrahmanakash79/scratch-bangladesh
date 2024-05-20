@@ -7,7 +7,7 @@ import Tutorial from "./Tutorial/Tutorial";
 
 const Home = () => {
     return (
-        <div className="">
+        <div>
             <Hero/>
             <Tutorial/>
             <Featured/>
