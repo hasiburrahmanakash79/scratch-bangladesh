@@ -16,7 +16,7 @@ const Achievement = () => {
         <div className="p-3">
           <div>
             <h2 className="text-3xl font-bold my-5">Lorem ipsum dolor sit.</h2>
-            <p className="md:mb-20 md:text-lg text-sm">
+            <p className="md:mb-10 md:text-lg text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta tempore quis amet architecto laudantium in eos, minus deserunt dolor sit odio pariatur reprehenderit minima molestias eligendi voluptatibus. Numquam, alias eligendi! Eaque ipsum molestiae, non commodi totam deserunt eveniet harum ad sint veritatis fugit maiores earum explicabo atque fugiat maxime. Pariatur?
             </p>
           </div>

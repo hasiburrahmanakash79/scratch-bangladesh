@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 import { useTranslation } from "react-i18next";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { FaAngleDown, FaBars, FaEarthAmericas } from "react-icons/fa6";
 
 function classNames(...classes) {
@@ -22,44 +22,58 @@ let countries = [
 ];
 
 const Navbar = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleNavItemClick = () => {
+    setDropdownOpen(false);
+  };
   const { t, i18n } = useTranslation();
   const user = true;
   const NavItems = (
     <>
-      <li>
+      <li onClick={() => setDropdownOpen(false)}>
         <Link to="/">{t("Home")}</Link>
       </li>
-      <li>
+      <li onClick={() => setDropdownOpen(false)}>
         <Link to="/about">{t("About us")}</Link>
       </li>
-      <li>
+      <li onClick={() => setDropdownOpen(false)}>
         <Link to="/olympiad">{t("Olympiad")}</Link>
       </li>
-      <li>
+      <li onClick={() => setDropdownOpen(false)}>
         <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted">
           {t("Learn")}
         </a>
       </li>
-      <li>
+      <li onClick={() => setDropdownOpen(false)}>
         <Link to="/blog">{t("Blog")}</Link>
       </li>
     </>
   );
 
-
   return (
     <div className="bg-opacity-70 min-w-full backdrop-blur-md bg-[#F4F1F1] fixed z-10 text-black">
       <div className="container mx-auto flex items-center justify-between">
         <div className="dropdown md:hidden">
-          <label tabIndex={0} className="btn btn-ghost">
+          <label
+            tabIndex={0}
+            className="btn btn-ghost"
+            onClick={handleDropdownToggle}
+          >
             <FaBars className="text-xl" />
           </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
-          >
-            {NavItems}
-          </ul>
+          {dropdownOpen && (
+            <ul
+              tabIndex={0}
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white rounded-box w-52"
+            >
+              {NavItems}
+            </ul>
+          )}
         </div>
         <div className="flex justify-start items-center">
           <Link className="">
@@ -82,30 +96,33 @@ const Navbar = () => {
                   <label
                     tabIndex={0}
                     className="btn btn-ghost btn-circle avatar"
+                    onClick={handleDropdownToggle}
                   >
                     <div className="md:w-10 w-7 rounded-full">
                       <img src="https://e7.pngegg.com/pngimages/550/997/png-clipart-user-icon-foreigners-avatar-child-face.png" />
                     </div>
                   </label>
                 </div>
-                <ul
-                  tabIndex={0}
-                  className="mt-3 p-2 shadow bg-white text-black menu menu-compact dropdown-content rounded-box w-52"
-                >
-                  <li>
-                    <Link to="/profile" className="">
-                      {t("Your Profile")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/dashboard" className="">
-                      {t("Dashboard")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="w-full">Log Out</Link>
-                  </li>
-                </ul>
+                {dropdownOpen && (
+                  <ul
+                    tabIndex={0}
+                    className="mt-3 p-2 shadow bg-white text-black menu menu-compact dropdown-content rounded-box w-52"
+                  >
+                    <li onClick={() => setDropdownOpen(false)}>
+                      <Link to="/profile" className="">
+                        {t("Your Profile")}
+                      </Link>
+                    </li>
+                    <li onClick={() => setDropdownOpen(false)}>
+                      <Link to="/dashboard" className="">
+                        {t("Dashboard")}
+                      </Link>
+                    </li>
+                    <li onClick={() => setDropdownOpen(false)}>
+                      <Link className="w-full">Log Out</Link>
+                    </li>
+                  </ul>
+                )}
               </div>
             </>
           ) : (
@@ -188,7 +205,7 @@ const Navbar = () => {
   //           </ul>
   //         </div>
   //       <div className="flex justify-start items-center">
-          
+
   //         <Link className="">
   //           <img
   //             src="https://i.ibb.co/x7G0RNy/Scratch-Bangladesh-Logo-1.png"

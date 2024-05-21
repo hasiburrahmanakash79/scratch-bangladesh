@@ -48,8 +48,8 @@ const Blog = () => {
 
   return (
     <div className="container md:pt-40 pt-24 mx-auto p-3">
-      <h1 className="md:text-5xl text-3xl font-bold pb-2 text-center">{t("Blog")}</h1>
-      <div className="md:grid grid-cols-3 p-3 space-y-5 md:space-y-0 justify-center my-10 items-center container mx-auto gap-10">
+      <h1 className="md:text-5xl text-3xl font-bold text-center">{t("Blog")}</h1>
+      <div className="md:grid grid-cols-3 p-3 space-y-5 md:space-y-0 justify-center my-5 items-center container mx-auto gap-10">
         {cardDetails.map((card, index) => (
           <Card key={card.id} className="overflow-hidden bg-slate-50 border p-4 hover:shadow-xl">
             <CardHeader
