@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className="flex items-center gap-5 md:mr-5">
           {user ? (
             <>
-              <div className="dropdown dropdown-end md:mr-0 mr-7">
+              <div className="dropdown dropdown-end">
                 <div className="tooltip tooltip-left" data-tip="User Name">
                   <label
                     tabIndex={0}

@@ -5,9 +5,9 @@ const Olympiad = () => {
   const { t } = useTranslation();
   
   return (
-    <div className="container md:pt-40 pt-24 mx-auto p-3">
+    <div className="container md:pt-40 pt-24 mx-auto p-3 md:text-lg text-sm">
       <div>
-        <h1 className="text-center md:text-5xl pb-7 text-3xl font-bold">
+        <h1 className="text-center md:text-5xl pb-5 text-3xl font-bold">
           {t("Bangladesh Scratch Olympiad")}
         </h1>
         <p className="my-5">
