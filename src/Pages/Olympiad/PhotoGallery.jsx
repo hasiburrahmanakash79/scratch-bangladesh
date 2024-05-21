@@ -66,7 +66,7 @@ const PhotoGallery = () => {
         "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     },
   ];
-  
+
   return (
     // <div className="">
     //   <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 ">
@@ -90,8 +90,8 @@ const PhotoGallery = () => {
     //   </div>
     // </div>
     <div className="my-10">
-          <h1 className="text-3xl font-bold mb-10">
-            {t("Olympiad Photo Gallery:")}{" "}
+          <h1 className="text-3xl text-center font-bold mb-10">
+            {t("Olympiad Photo Gallery")}{" "}
           </h1>
           <div className="grid md:grid-cols-5 grid-cols-2 gap-5 ">
             {data.map(({ imgelink }, index) => (

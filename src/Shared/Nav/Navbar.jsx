@@ -27,10 +27,6 @@ const Navbar = () => {
   const handleDropdownToggle = () => {
     setDropdownOpen(!dropdownOpen);
   };
-
-  const handleNavItemClick = () => {
-    setDropdownOpen(false);
-  };
   const { t, i18n } = useTranslation();
   const user = true;
   const NavItems = (
