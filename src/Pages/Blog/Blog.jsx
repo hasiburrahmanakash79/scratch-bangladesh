@@ -47,7 +47,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="container md:pt-40 pt-24 mx-auto p-3">
+    <div className="container md:pt-28 pt-24 mx-auto p-3">
       <h1 className="md:text-5xl text-3xl font-bold text-center">{t("Blog")}</h1>
       <div className="md:grid grid-cols-3 p-3 space-y-5 md:space-y-0 justify-center my-5 items-center container mx-auto gap-10">
         {cardDetails.map((card, index) => (

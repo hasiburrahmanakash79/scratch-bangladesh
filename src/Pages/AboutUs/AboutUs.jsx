@@ -6,12 +6,12 @@ const AboutUs = () => {
   const { t } = useTranslation();
   return (
     <div className="container mx-auto p-3 mb:pt-40 pt-24">
-      <div className="items-center grid-cols-3 gap-10 md:grid ">
-        <div className="col-span-1">
-          <img src="https://logos-world.net/wp-content/uploads/2023/08/Scratch-Emblem-500x281.png" 
+      <div className="items-center grid-cols-5 gap-10 md:grid ">
+        <div className="col-span-2 md:p-20 p-10">
+          <img src="https://i.ibb.co/3TB6snz/scratch-bd-main-logo.png" 
           className="w-full"/>
         </div>
-        <div className="text-center col-span-2 md:text-left">
+        <div className="text-center col-span-3 md:text-left">
           <h1 className="my-5 md:text-5xl text-3xl font-bold">
             {t("Scratch Bangladesh")}
           </h1>

@@ -71,11 +71,11 @@ const Navbar = () => {
             </ul>
           )}
         </div>
-        <div className="flex justify-start items-center">
+        <div className="p-3">
           <Link className="">
             <img
-              src="https://i.ibb.co/x7G0RNy/Scratch-Bangladesh-Logo-1.png"
-              className="md:w-28 w-16"
+              src="https://i.ibb.co/qd28TJX/scratch-bd-nav-logo.png"
+              className="md:w-16 w-16"
             />
           </Link>
         </div>
