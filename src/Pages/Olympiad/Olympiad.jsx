@@ -3,11 +3,11 @@ import PhotoGallery from "./PhotoGallery";
 
 const Olympiad = () => {
   const { t } = useTranslation();
-  
+
   return (
-    <div className="container pt-28 mx-auto p-3">
+    <div className="container md:pt-28 pt-24 mx-auto p-3 md:text-lg text-sm">
       <div>
-        <h1 className="text-center md:text-5xl text-3xl font-bold">
+        <h1 className="text-center md:text-5xl pb-5 text-3xl font-bold">
           {t("Bangladesh Scratch Olympiad")}
         </h1>
         <p className="my-5">
@@ -38,7 +38,7 @@ const Olympiad = () => {
           {t("Previous Year Questions:")}
         </h1>
         <div className="items-center grid-cols-3 gap-10 md:grid my-7">
-          <div className="col-span-2 mb-3 rounded-lg ">
+          <div className="col-span-2 mb-3 rounded-lg object-cover">
             <img
               className="rounded-lg shadow-lg"
               src="https://i.ibb.co/7x3Hpmm/scratchimage.jpg"
@@ -95,7 +95,7 @@ const Olympiad = () => {
         </div>
       </div>
       <div>
-        <PhotoGallery/>
+        <PhotoGallery />
       </div>
     </div>
   );

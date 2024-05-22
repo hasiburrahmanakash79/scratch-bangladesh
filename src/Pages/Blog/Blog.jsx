@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Card, CardHeader } from "@material-tailwind/react";
-import { FaEllipsisVertical } from "react-icons/fa6";
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -48,44 +47,18 @@ const Blog = () => {
   ];
 
   return (
-    <div className="container pt-28 mx-auto p-3">
-      <h1 className="md:text-5xl text-3xl font-bold pb-7 text-center">{t("Blog")}</h1>
-
-      <div className=" md:grid grid-cols-3 my-5 gap-5 ">
-      {cardDetails.map((card, index) => (
-        <div key={index} className="bg-[#ededed] p-5 rounded-md shadow-lg">
-          <div className="avatar">
-            <div className="w-fit rounded">
-              <img src={card.image} />
-            </div>
-          </div>
-          <Link
-                to="/"
-                className="md:text-xl text-black font-semibold text-sm"
-              >
-                {index+1}. {card.title}
-              </Link>
-            <div>
-              <span>
-                {card.details.slice(0, 100)}.....{" "}
-                <Link to="/details" className="link link-hover text-violet-600">{t("Read more")}</Link>
-              </span>
-            </div>
-        </div>
-      ))}
-        
-      </div>
-
-      <div className="md:grid grid-cols-3 p-3 space-y-5 md:space-y-0 justify-center my-10 items-center container mx-auto gap-10">
+    <div className="container md:pt-28 pt-24 mx-auto p-3">
+      <h1 className="md:text-5xl text-3xl font-bold text-center">{t("Blog")}</h1>
+      <div className="md:grid grid-cols-3 p-3 space-y-5 md:space-y-0 justify-center my-5 items-center container mx-auto gap-10">
         {cardDetails.map((card, index) => (
-          <Card key={card.id} className="overflow-hidden p-3 hover:shadow-xl">
+          <Card key={card.id} className="overflow-hidden bg-slate-50 border p-4 hover:shadow-xl">
             <CardHeader
               floated={false}
               shadow={false}
               color="transparent"
               className="m-0 rounded-none"
             >
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-44 rounded overflow-hidden">
                 <img
                   src={card.image}
                   alt={card.title}
@@ -93,19 +66,6 @@ const Blog = () => {
                 />
               </div>
             </CardHeader>
-            <div className="mt-4 flex justify-between items-center">
-              <Link className="flex items-center gap-3">
-                <div className="avatar ">
-                  <div className="w-6 rounded-full">
-                    <img src={card.authorImage} alt="" />
-                  </div>
-                </div>
-                <p>{card.authorName}</p>
-              </Link>
-              <Link>
-                <FaEllipsisVertical />
-              </Link>
-            </div>
             <div className="py-3">
               <Link
                 to="/"
