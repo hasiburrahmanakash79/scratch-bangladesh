@@ -4,7 +4,6 @@ import { Card, CardHeader } from "@material-tailwind/react";
 
 const Blog = () => {
   const { t } = useTranslation();
-  
 
   const cardDetails = [
     
