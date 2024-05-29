@@ -38,13 +38,13 @@ const Olympiad = () => {
           {t("Previous Year Questions:")}
         </h1>
         <div className="items-center grid-cols-3 gap-10 md:grid my-7">
-          <div className="col-span-2 mb-3 rounded-lg object-cover">
+          <div className="col-span-2 mb-3 md:mb-0 rounded-lg object-cover">
             <img
               className="rounded-lg shadow-lg"
               src="https://i.ibb.co/7x3Hpmm/scratchimage.jpg"
             />
           </div>
-          <div className=" col-span-1 bg-blue-400  scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-slate-300 scrollbar-w-2 scrollbar-track-transparent p-5 overflow-y-auto md:h-[58vh]  rounded-lg space-y-4">
+          <div className=" col-span-1 bg-blue-400  scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-slate-300 scrollbar-w-2 scrollbar-track-transparent p-5 overflow-y-auto h-[56.2vh]  rounded-lg space-y-4">
             <div className="p-2 bg-white rounded-md shadow-lg link link-hover hover:bg-blue-300">
               <h1>Scratch Olympiad 2024 (Upcomming...)</h1>
             </div>
