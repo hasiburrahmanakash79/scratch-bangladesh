@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next";
+
 const Faq = () => {
+  const { t } = useTranslation();
   return (
     <div className="container mx-auto my-14 p-3">
-        <h1 className="md:text-5xl text-2xl text-center font-bold mb-14">Frequently Ask Question</h1>
+        <h1 className="md:text-5xl text-2xl text-center font-bold mb-14"> {t("Frequently Ask Question")}</h1>
       <div className="md:grid grid-cols-3 items-center justify-center gap-5">
         <div className="space-y-3 col-span-2">
           <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" defaultChecked />
-            <div className="collapse-title font-medium">
+            <div className="collapse-title font-semibold">
             What is Scratch, and what can I do with it?
 
             </div>
@@ -16,7 +19,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title font-medium">
+            <div className="collapse-title font-semibold">
             Who uses Scratch?
             </div>
             <div className="collapse-content">
@@ -25,7 +28,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title font-medium">
+            <div className="collapse-title font-semibold">
             What are the system requirements for Scratch?
             </div>
             <div className="collapse-content">
@@ -34,7 +37,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title font-medium">
+            <div className="collapse-title font-semibold">
             Can I still upload projects created with older versions of Scratch to the website?
             </div>
             <div className="collapse-content">
@@ -43,7 +46,7 @@ const Faq = () => {
           </div>
           <div className="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div className="collapse-title font-medium">
+            <div className="collapse-title font-semibold">
             Do you have a downloadable version so I can create and view projects offline?
             </div>
             <div className="collapse-content">
